@@ -4,13 +4,13 @@
 
 ---
 
-# [Update / Pitch] A few weeks ago, you told me to stop finishing games in my head and write a real GDD. Here is OBSOLETO.
+# [Update / Pitch] A few weeks ago, I confessed I was a "dreamer" who only played games in his mind. You told me to write a proper GDD. Here is OBSOLETO.
 
 Hey r/gamedev,
 
-A few weeks ago, I posted here confessing that I kept "finishing" whole games in my head without ever actually sitting down to design them. Several of you gave me solid advice: stop daydreaming and write a proper Game Design Document (GDD).
+A few weeks ago, I posted here feeling a bit lost, confessing that I was a dreamer who kept "finishing" whole games in my head without ever sitting down to design them. Several of you gave me the best advice I could have asked for: stop daydreaming and write a proper Game Design Document (GDD).
 
-I took that to heart. I spent the last few weeks thinking through all the mechanics, systems, and scope, and I finally committed to this project. I believe the premise is strong, and it's a story and game loop I would genuinely love to design and build. I’m sharing it here hoping some of you can check it out and give me your honest, constructive critique before I dive into engine prototyping.
+I took that to heart. I spent the last few weeks structuring the mechanics, the systems, and the emotional core of my idea. Here is the result. I hope those of you who have the time to read it can appreciate it, and I would absolutely love to hear your honest, constructive critiques before I dive into engine prototyping.
 
 ---
 
