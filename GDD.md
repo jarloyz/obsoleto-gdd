@@ -15,30 +15,37 @@
 * **Modelo de Negocio:** Compra única premium (10 - 15 USD), sin microtransacciones ni DLC invasivos.
 
 ### Elevator Pitch
-Tras ser despedido y considerado "obsoleto" a los 47 años en una reestructuración corporativa que liquidó sus 25 años de servicio —reemplazado por un recién graduado que cobra tres veces menos aunque no sepa hacer la mitad de su trabajo—, Kenji pierde su departamento y se ve forzado a vivir en su viejo Toyota familiar de los 90. Al empacar lo que le queda, se enfrenta a la urna de su difunta esposa, a su retrato y a una montaña de promesas rotas, la más pesada de todas: el viaje por carretera hasta el final que siempre le juró hacer «este año» y que el trabajo postergó hasta que fue tarde. 
+Ambientado en el **Japón contemporáneo**, encarnas a Kenji (47 años), un asalariado administrativo despedido en una reestructuración corporativa tras 25 años de servicio —reemplazado por un recién graduado que cobra un tercio de su sueldo gracias a la automatización digital—. Expulsado del sistema y sin poder pagar el alquiler de la metrópoli, Kenji vende su smartphone para comprar comida básica y empaca lo poco que le queda en su modesto **Toyota Probox de 1998**: el clásico y austero vehículo familiar de los oficinistas japoneses.
 
-Junto a sus cenizas y a **la máquina de escribir mecánica de ella** —quien siempre soñó con ser escritora mientras él le prometía tiempo que nunca le dio—, Kenji toma la última fuerza que le queda: si ya es chatarra para el sistema, ahora vivirá para cumplir esas promesas. Recorrerá carreteras secundarias vendiendo fideos instantáneos "tuneados" desde la cajuela para pagar la gasolina, mientras cada noche golpea las teclas de la máquina de su esposa para terminar la historia que ella no pudo escribir.
+En la cajuela guarda una libreta arrugada con el número de su hijo, una vieja cámara analógica de rollo de 35mm (que compró con su esposa para unas vacaciones que nunca llegaron), un mapa de carreteras comprado en una gasolinera y **la máquina de escribir mecánica de ella**, quien soñó toda su vida con ser escritora. 
+
+Con las cenizas y el retrato de su esposa en el tablero, Kenji toma la última fuerza que le queda para saldar sus promesas: llegar al extremo norte (Cabo Sōya). Para costear la gasolina y las refacciones sin un solo yen de saldo digital, abre la cajuela al anochecer vendiendo fideos instantáneos "tuneados" a trabajadores nocturnos; desde cabinas telefónicas públicas de monedas verdes enfrenta el dilema de confesarle su miseria a su hijo o mentir diciendo que «todo va bien»; y cada madrugada teclea a compás en la máquina de su esposa para terminar la novela que ella nunca pudo escribir.
 
 ---
 
 ## 2. Sinopsis Narrativa & Arco del Personaje
 
-### Contexto: 25 Años de Rutina Invisible
+### Contexto Contemporáneo: 25 Años de Rutina Invisible
 * **El Protagonista:** Kenji (47 años). Durante un cuarto de siglo fue un oficinista administrativo leal, puntual e invisible.
-* **El Vehículo del Asalariado:** Una vagoneta familiar japonesa de mediados de los 90 (un *Toyota Corolla Touring Wagon / Nissan AD Van* de motor 1.5L), color blanco comercial desteñido, con tapacubos rayados y parachoques de plástico gris. Lo compró a plazos hace casi dos décadas cuando sus hijos eran pequeños; luego se convirtió en el coche de diario que pasaba 12 horas bajo el sol en el estacionamiento corporativo mientras Kenji acumulaba horas extra. Huele a té verde embotellado, aire acondicionado añejo y papeles sellados. No es una camper de lujo ni un capricho bohemio: es el carromato honesto y desgastado de un asalariado común.
-* **La Sentencia Corporativa:** La directiva convoca a reestructuración. *«Lo sabes perfectamente: un recién graduado cobra tres veces menos que tú, aunque no sepa hacer lo que tú haces ni entienda el peso de una responsabilidad real. Pero para la hoja de cálculo de la gerencia, eres solo un costo operativo obsoleto.»* Un apretón de manos tibio, una caja de cartón para sus pertenencias de escritorio y un modesto cheque de liquidación que se evapora de inmediato pagando pagarés atrasados del hospital.
-* **La Soledad y el Desalojo:** Sin ingresos para el alquiler metropolitano y negándose con orgullo silencioso a pedir asilo a sus hijos adultos —quienes lidian con sus propias deudas, alquileres y problemas—, llega el día de entregar las llaves del minúsculo departamento.
+* **El Vehículo Real del Asalariado:** Un **Toyota Probox (プロボックス) de 1998** (o *Corolla Fielder* de 1.5L). En Japón, el Probox blanco con parachoques de plástico gris sin pintar es el símbolo por antonomasia del *sararīman* explotado: un coche compacto de apenas 4.2 metros, indestructible, de bajo consumo y con asientos traseros abatibles que quedan 100% planos (diseñados para transportar cajas de archivo o dormir siestas rápidas de 20 minutos). No es una van grande occidental que jamás cabría en los callejones japoneses, sino la herramienta austera de trabajo que Kenji compró cuando sus hijos eran pequeños. Huele a té verde frío, aire acondicionado añejo y carpetas de balance.
+* **La Sentencia de la Era Digital:** *«Lo sabes perfectamente: un recién graduado cobra tres veces menos que tú, maneja software que tú tardas días en entender y no tiene la vista cansada. Para los algoritmos y la gerencia moderna, eres solo un costo operativo obsoleto.»*
+* **El Aislamiento Forzado:** Sin dinero para pagar el alquiler de Tokio y negándose con orgullo silencioso a ser una carga para sus hijos adultos —quienes luchan con sus propias hipotecas y deudas—, Kenji entrega las llaves de su minúsculo piso. **Vende su smartphone en una casa de empeño** para comprar las últimas cajas de fideos, gas y garrafas de agua. En el bolsillo solo le queda una libreta de papel arrugada donde anotó a bolígrafo el número de teléfono fijo de su hijo.
 
-### El Momento de Empacar: La Montaña de Promesas Rotas
-En la penumbra del departamento vacío, Kenji apila lo poco que cabe en el maletero de la vagoneta: un colchón delgado, dos mantas, una olla pequeña y un hornillo de gas portátil. 
+### El Momento de Empacar: Los Cuatro Objetos de la Memoria
+En el maletero del Probox solo caben los fragmentos de una vida:
+1. **La Urna y el Retrato:** Las cenizas de su esposa en una urna de cerámica envuelta en tela de seda en el asiento del copiloto, y su foto sujeta con cinta adhesiva al salpicadero.
+2. **El Mapa de Carreteras de Papel:** Comprado en una gasolinera rural de paso. Sin GPS ni datos móviles, el mapa doblado en cuatro sobre el volante es su única guía entre carreteras nacionales secundarias (*kokudō*).
+3. **La Vieja Cámara de Rollo (35mm):** Una cámara mecánica que compraron juntos hace 15 años entre risas como «el primer preparativo para las vacaciones familiares por carretera» que postergaron cada año y que jamás llegaron a hacer. Le quedan exactamente 24 fotos en el carrete.
+4. **La Máquina de Escribir de Ella:** El objeto más sagrado. Su difunta esposa siempre soñó con ser escritora y publicar una novela. Él le juró una y otra vez que le daría tiempo y tranquilidad para escribir, una promesa ahogada por 25 años de horas extra.
 
-Al levantar la pequeña urna de cerámica con las cenizas de su esposa y el marco de madera con su fotografía, el peso del pasado le cae encima como plomo:
-* **La Promesa de la Ruta:** Recuerda las noches que llegaba a casa a las 22:30 con la camisa empapada en sudor frío y la cena fría en la mesa. Cada año, al verla cansada, él le decía con tono reconfortante: *«Este año sí. Este año sí pedimos las vacaciones acumuladas, metemos las maletas a la vagoneta y recorremos toda la carretera nacional hasta el final, hasta donde el mar se congela»*. Pero ese año nunca llegó. Siempre hubo un balance trimestral que cuadrar, una auditoría interna, un ascenso prometido que nunca llegó. Y ella siempre estuvo ahí, mirándolo con esa sonrisa paciente, acariciándole el hombro y diciendo: *«No te preocupes, Kenji. El próximo año lo haremos»*. Hasta que el cáncer se la llevó hace tres años, dejándolo con las manos vacías y la casa en silencio.
-* **La Máquina de Escribir de Ella:** En la última caja encuentra la vieja máquina de escribir mecánica portátil de su esposa. Ella siempre soñó con ser escritora; tenía cuadernos llenos de relatos a medio empezar, recortes de noticias y poemas en servilletas. Él le había jurado que cuando terminaran de pagar la hipoteca, ella podría renunciar a sus trabajos temporales y dedicarse por entero a su libro. *¿En cuánto le fallaste en vida? ¿Cuántas promesas quedaron sepultadas bajo el polvo de una oficina que al final te tiró a la calle como chatarra inútil?* Y aun así, en sus recuerdos, ella jamás le reprochó nada; siempre le sonrió.
+### El Dilema de la Cabina Pública NTT (Verde de Monedas)
+En cada pueblo y área de descanso (*Michi-no-Eki*), hay una cabina telefónica pública verde de monedas. Con 100 yenes ganados con el caldo, Kenji puede descolgar el auricular y marcar el número de su hijo. 
+* ¿Tendrá el valor de decirle la verdad? (*«Hijo... me quedé sin trabajo, me echaron del departamento y estoy viviendo en el auto»*).
+* ¿O se tragará las lágrimas escuchando la estática de la línea para decirle: *«Todo marcha de maravilla por aquí, hijo. Solo llamaba para escuchar tu voz. Cuídate mucho»*?
 
 ### La Última Fuerza: Cumplir la Palabra
-El dolor se transforma en una convicción silenciosa y férrea. La sociedad lo ha declarado obsoleto, pero para ella todavía tiene una deuda pendiente:
-> *«Si para el mundo ya no sirvo, si ya no le debo un solo minuto a ninguna empresa... ahora voy a cumplir lo que te prometí. Te voy a llevar hasta el final de la ruta. Y en tu máquina voy a escribir la historia que no te di tiempo de contar.»*
+El dolor se transforma en una convicción silenciosa:
+> *«Si para el mundo hiperconectado ya no existo, si ya no le debo un solo minuto a ninguna oficina... ahora voy a cumplir lo que te prometí. Te voy a llevar hasta el Cabo Sōya. Usaré las fotos que nunca nos tomamos. Y en tu máquina de escribir, voy a terminar la novela que te prometí que escribirías.»*
 
 Coloca la urna de cerámica envuelta en tela de seda en el asiento del copiloto, fija el retrato con cinta adhesiva al tablero junto a los conductos de ventilación, acomoda la máquina de escribir sobre el respaldo trasero y gira la llave del motor.
 
@@ -133,13 +140,25 @@ Cuando se apaga el hornillo y se baja la compuerta de la cajuela, Kenji pasa a l
   * Al juntar cuartillas completas, se pueden enviar por correo postal en las oficinas de los pueblos hacia pequeños certámenes o publicaciones locales bajo el nombre de ella.
   * Respuestas realistas llegan días después a apartados postales: desde rechazos amables hasta pequeños pagos simbólicos de colaboración que permiten cambiar un filtro de aceite o comprar gas butano.
 
-### 5.4 Gestión de Espacio (Tetris en la Cajuela)
-El espacio de la vagoneta es un recurso finito modelado en una cuadrícula tipo inventario táctico:
+### 5.4 Gestión de Espacio (Tetris en la Cajuela del Probox)
+El maletero del Toyota Probox tiene piso plano al abatir los asientos traseros, pero el espacio sigue siendo rigurosamente limitado:
 * El saco de dormir ocupa 6 casillas.
 * La urna y el portarretratos siempre ocupan el asiento delantero (no removibles).
 * Las cajas de 24 vasos de fideos ocupan 4 casillas cada una.
 * El tanque de gas y el bidón de 5L de reserva de gasolina compiten por el espacio ventilado.
 * **Dilema del Pasajero:** Si Kenji acepta llevar a un autoestopista para ganar dinero extra o escuchar una historia, debe reorganizar el maletero para liberar el asiento trasero, sacrificando la posibilidad de llevar provisiones extra.
+
+### 5.5 Las Cabinas Telefónicas NTT & La Cámara de 35mm
+Dos mecánicas adicionales ancladas en objetos físicos:
+* **La Cabina Verde NTT (El Vínculo con el Hijo):**
+  * Presente en áreas de servicio (*Michi-no-Eki*) y esquinas de pueblos.
+  * Funciona insertando monedas de 100 yenes del portavasos.
+  * Abre un sistema de diálogo ramificado: Kenji saca la libreta arrugada, marca el número fijo de su hijo y el jugador decide si confesar la verdad sobre su desalojo o mantener la mentira piadosa (*«Todo va bien, hijo»*) mientras el medidor de tiempo de la llamada baja segundo a segundo.
+* **La Cámara de Rollo de 35mm (24 Exposiciones):**
+  * Comprada hace 15 años para las vacaciones que nunca ocurrieron.
+  * Solo quedan **24 fotografías en el carrete** para todo el viaje.
+  * El jugador puede asomarse por el visor óptico analógico para retratar paisajes, amaneceres, clientes memorables o el coche frente a un mirador.
+  * Estas 24 fotos tomadas por el jugador son reveladas durante los créditos finales al llegar a Cabo Sōya, convirtiéndose en el álbum fotográfico real de la travesía.
 
 ---
 

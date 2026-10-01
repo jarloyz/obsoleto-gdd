@@ -37,14 +37,15 @@ https://<tu-usuario>.github.io/obsolette/
 
 ## 📂 Estructura del Proyecto
 
-* **[`index.html`](file:///home/jarloyz/estudio/obsolette/index.html):** Página web interactiva del GDD (diseño responsivo, modo lluvia ambiental con Web Audio, pestañas del ciclo de 24h, simulador de grafo de nodos y modal para Reddit).
+* **[`index.html`](file:///home/jarloyz/estudio/obsolette/index.html):** Página web interactiva del GDD (diseño responsivo, modo lluvia ambiental con Web Audio, pestañas del ciclo de 24h, simulador de grafo de nodos y modal para Reddit en inglés).
 * **[`style.css`](file:///home/jarloyz/estudio/obsolette/style.css):** Sistema de diseño visual estilizado (paleta lo-fi ámbar y pizarra, tipografía *Inter*, *Shippori Mincho* y *JetBrains Mono*, animaciones sutiles y estilos de impresión para exportar a PDF).
 * **[`script.js`](file:///home/jarloyz/estudio/obsolette/script.js):** Lógica interactiva (animación de gotas en Canvas, generador de audio ambiente de lluvia, pestañas interactivas del bucle diario y simulador de ruta).
-* **[`GDD.md`](file:///home/jarloyz/estudio/obsolette/GDD.md):** Documento formal de diseño de videojuego en Markdown puro con tablas, diagramas y especificaciones técnicas.
+* **[`GDD.md`](file:///home/jarloyz/estudio/obsolette/GDD.md):** Documento formal de diseño de videojuego en **Español** con tablas, diagramas y especificaciones técnicas.
+* **[`GDD_EN.md`](file:///home/jarloyz/estudio/obsolette/GDD_EN.md):** Complete Game Design Document in **English**, formatted and optimized for international developers, Reddit, publishers, and communities.
 * **`assets/`:** Arte conceptual y capturas visuales de la atmósfera del juego:
-  * `cover.jpg`: El auto familiar en una curva de montaña al atardecer con la cajuela abierta y la tetera humeante.
+  * `cover.jpg`: El Toyota Probox en una curva de montaña al atardecer con la cajuela abierta y la tetera humeante.
   * `cockpit.jpg`: Vista en primera persona de la cabina de conducción bajo la lluvia nocturna con el retrato en el tablero.
-  * `typewriter.jpg`: La cabina trasera convertida en estación creativa nocturna con la máquina de escribir mecánica.
+  * `typewriter.jpg`: La cabina trasera convertida en estación creativa nocturna con la máquina de escribir mecánica de su esposa.
 
 ---
 
