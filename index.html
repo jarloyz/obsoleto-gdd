@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OBSOLETO — Game Design Document & Pitch</title>
+  <meta name="description" content="Documento de diseño de videojuego (GDD) para OBSOLETO: un slice-of-life narrativo de supervivencia, conducción contemplativa y un puesto rodante de fideos instantáneos en carreteras secundarias.">
+  <meta name="theme-color" content="#090c10">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OBSOLETO — Game Design Document">
+  <meta property="og:description" content="Tienes 47 años, un coche viejo, fideos en la cajuela y las cenizas de tu esposa en el tablero. GDD técnico y narrativo.">
+  <meta property="og:image" content="assets/cover.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Shippori+Mincho:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Atmospheric Background Canvas (Rain) -->
+  <canvas id="rain-canvas"></canvas>
+
+  <!-- Reading Progress Top Bar -->
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <!-- Top Fixed Bar -->
+  <header class="top-bar">
+    <div class="top-bar-left">
+      <button id="mobile-toggle" class="mobile-menu-toggle" aria-label="Abrir Menú">☰</button>
+      <a href="#hero" class="brand-badge">
+        <span>OBSOLETO</span>
+        <span class="brand-kanji">時代遅れ</span>
+      </a>
+    </div>
+
+    <div class="top-bar-actions">
+      <button id="audio-toggle-btn" class="btn-icon" title="Activar/Desactivar sonido ambiente de lluvia">
+        <span>🌧️</span> <span>Ambiente: Apagado</span>
+      </button>
+      <button id="open-reddit-modal" class="btn-icon btn-primary" title="Ver formato listo para publicar en Reddit">
+        <span>📋</span> <span>Pitch para Reddit</span>
+      </button>
+      <a href="GDD.md" download class="btn-icon" title="Descargar archivo Markdown">
+        <span>💾</span> <span>GDD.md</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="app-container">
+
+    <!-- Sticky Navigation Sidebar -->
+    <nav id="sidebar" class="sidebar">
+      <div>
+        <div class="nav-section-title">Índice del Documento</div>
+        <ul class="nav-links">
+          <li><a href="#hero" class="active"><span>00.</span> Visión General</a></li>
+          <li><a href="#high-concept"><span>01.</span> High Concept & Ficha</a></li>
+          <li><a href="#narrativa"><span>02.</span> Sinopsis & Personaje</a></li>
+          <li><a href="#pilares"><span>03.</span> Pilares de Diseño</a></li>
+          <li><a href="#bucle-diario"><span>04.</span> El Bucle Diario</a></li>
+          <li><a href="#mecanicas-conduccion"><span>05.</span> Conducción & Ruta</a></li>
+          <li><a href="#mecanicas-cajuela"><span>06.</span> El Puesto de Fideos</a></li>
+          <li><a href="#mecanicas-escritura"><span>07.</span> Máquina de Escribir</a></li>
+          <li><a href="#gestion-espacio"><span>08.</span> Inventario en Cajuela</a></li>
+          <li><a href="#mundo-nodos"><span>09.</span> Grafo de Nodos & Biomas</a></li>
+          <li><a href="#modos-finales"><span>10.</span> Modos & El Cabo Sōya</a></li>
+          <li><a href="#arte-audio"><span>11.</span> Arte & Diseño Sonoro</a></li>
+          <li><a href="#viabilidad"><span>12.</span> Viabilidad Solo Dev</a></li>
+          <li><a href="#roadmap"><span>13.</span> Roadmap de Prototipado</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-footer">
+        <p><strong>OBSOLETO GDD</strong> v1.0</p>
+        <p>Diseñado para GitHub Pages</p>
+        <p style="margin-top: 0.35rem; color: var(--amber-light);">Listo para prototipar</p>
+      </div>
+    </nav>
+
+    <!-- Main Content Stream -->
+    <main class="main-content">
+
+      <!-- Hero Header -->
+      <section id="hero" class="hero-header doc-section">
+        <div class="hero-image-wrapper">
+          <img src="assets/cover.jpg" alt="Obsoleto Concept Art - Coche familiar en carretera de montaña con cajuela abierta humeante" class="hero-image">
+          <div class="hero-overlay">
+            <span class="hero-tag">Documento de Diseño de Videojuego (GDD)</span>
+            <h1 class="hero-title">OBSOLETO</h1>
+            <p class="hero-subtitle">
+              «Tienes 47 años, un coche viejo de los 90, fideos instantáneos en la cajuela y las cenizas de tu esposa en el asiento del copiloto.»
+            </p>
+            <div class="hero-stats-grid">
+              <div class="stat-item">
+                <span class="stat-label">Género</span>
+                <span class="stat-val">Slice-of-Life / Survival</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Plataforma</span>
+                <span class="stat-val">PC / Steam / Deck</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Estilo Visual</span>
+                <span class="stat-val">Low-Poly PS1 Stylized</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-label">Referentes</span>
+                <span class="stat-val">Pacific Drive, Jalopy, Coffee Talk</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 01. High Concept & Elevator Pitch -->
+      <section id="high-concept" class="doc-section">
+        <span class="section-tag">Capítulo 01</span>
+        <h2 class="section-heading">High Concept & Resumen Ejecutivo</h2>
+        <p class="lead-text">
+          <strong>OBSOLETO</strong> es una experiencia narrativa de ritmo pausado que combina la calma hipnótica de la conducción en carreteras secundarias con la microgestión táctil de comida caliente y el proceso íntimo de redacción en una máquina de escribir.
+        </p>
+
+        <div class="grid-3">
+          <div class="feature-card">
+            <span class="card-icon">🚗</span>
+            <h3 class="card-title">Conducción Contemplativa</h3>
+            <p>Física no arcade a 60–80 km/h. Sentir la inercia del coche cargado, el sonido del limpiaparabrisas y el asfalto mojado entre puertos de montaña.</p>
+          </div>
+          <div class="feature-card">
+            <span class="card-icon">🍜</span>
+            <h3 class="card-title">Puesto Callejero de Fideos</h3>
+            <p>Micro-juegos de precisión para hervir agua, picar cebollín con navaja sobre el cofre y tunear ramen instantáneo para obreros nocturnos.</p>
+          </div>
+          <div class="feature-card">
+            <span class="card-icon">⌨️</span>
+            <h3 class="card-title">Máquina de Escribir</h3>
+            <p>Minijuego rítmico donde los golpes secos de las teclas de plomo transforman las conversaciones del día en páginas manuscritas.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02. Sinopsis Narrativa -->
+      <section id="narrativa" class="doc-section">
+        <span class="section-tag">Capítulo 02</span>
+        <h2 class="section-heading">Sinopsis Narrativa & Arco del Personaje</h2>
+        
+        <p>
+          Durante 25 años fuiste el engranaje invisible de una oficina que nunca aprendió tu nombre de pila. Viste crecer a tus hijos entre horas extra y carpetas de balance; hoy ellos tienen sus propias vidas, sus propias deudas y un silencio incómodo en las llamadas de fin de mes. Cuando tu esposa falleció de cáncer tras una larga agonía médica que consumió tus ahorros, el departamento se volvió un cascarón vacío donde la única constante era el agua hirviendo y los vasos de fideos instantáneos de 100 yenes a los que, con el tiempo y la miseria, aprendiste a darles sazón con lo poco que quedaba en la alacena.
+        </p>
+
+        <div class="narrative-quote">
+          «Luego llegó el memorándum: la empresa necesitaba "reestructurarse". Un recién egresado cobra un tercio de tu sueldo, no tiene la vista cansada y aguanta jornadas sin chistar. Te dieron un apretón de manos tibio, un cheque de liquidación que se evaporó pagando pagarés del hospital y una palmada en la espalda. Treinta currículums después, entendiste el veredicto del mercado: <strong>estás obsoleto</strong>.»
+        </div>
+
+        <p>
+          Sin dinero para pagar el alquiler de la metrópoli y sin la dignidad para pedirle asilo a tus hijos, empacaste tus pertenencias en tu vagoneta familiar de los 90. En el asiento del copiloto colocaste la urna de cerámica con las cenizas de tu esposa envuelta en tela de seda y su retrato fijado con cinta adhesiva al tablero. Decidiste emprender el viaje que le prometiste durante dos décadas y que siempre postergaste por trabajo: cruzar el país de sur a norte hasta llegar al Cabo Sōya, en el extremo frío de Hokkaido.
+        </p>
+
+        <p>
+          La primera noche en la banqueta de un muelle industrial, encendiste tu hornillo para prepararte una cena caliente. Un par de estibadores que salían del turno de noche olieron el caldo hirviendo y preguntaron el precio. Con tres monedas en la mano y el tintineo seco al caer en el portavasos de la consola, empezó tu segunda vida: sobrevivir en la carretera, un tazón de fideos a la vez.
+        </p>
+      </section>
+
+      <!-- 03. Pilares de Diseño -->
+      <section id="pilares" class="doc-section">
+        <span class="section-tag">Capítulo 03</span>
+        <h2 class="section-heading">Pilares de Diseño (Core Pillars)</h2>
+
+        <div class="grid-3">
+          <div class="feature-card">
+            <span class="badge badge-amber">Pilar 01</span>
+            <h3 class="card-title" style="margin-top: 0.75rem;">La Dignidad de la Rutina</h3>
+            <p>La victoria del jugador no es volverse un magnate gastronómico ni abrir franquicias. Es tener monedas para 15 litros de gasolina, cambiar una bujía con carbón, comprar un paquete de huevos frescos y tener 30 minutos de paz nocturna.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="badge badge-amber">Pilar 02</span>
+            <h3 class="card-title" style="margin-top: 0.75rem;">El Bucle Tripartito</h3>
+            <p>La experiencia divide cada sesión en 3 estados emocionales claros: la soledad contemplativa de la carretera abierta, el dinamismo táctico del despacho de fideos en el pueblo, y la intimidad cálida de la máquina de escribir de noche.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="badge badge-amber">Pilar 03</span>
+            <h3 class="card-title" style="margin-top: 0.75rem;">Diegesis Absoluta</h3>
+            <p>Cero elementos de HUD invasivos. El combustible se vigila en la aguja analógica del tablero; el daño del motor, en el termómetro y el vapor del radiador; el dinero, en las monedas del portavasos; el mapa, en un pliego de papel arrugado.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04. El Bucle Diario (Core Loop Interactivo) -->
+      <section id="bucle-diario" class="doc-section">
+        <span class="section-tag">Capítulo 04</span>
+        <h2 class="section-heading">El Bucle Diario (The 24h Loop)</h2>
+        <p>
+          Cada día en el juego sigue un ritmo natural de 24 horas. Explora las cuatro fases de la rutina diaria seleccionando cada etapa a continuación:
+        </p>
+
+        <div class="loop-container">
+          <div class="loop-tabs">
+            <button class="loop-tab-btn active" data-target="loop-stage-1">
+              <span>🌅</span> 08:00 — Mañana
+            </button>
+            <button class="loop-tab-btn" data-target="loop-stage-2">
+              <span>🛣️</span> 13:00 — La Ruta
+            </button>
+            <button class="loop-tab-btn" data-target="loop-stage-3">
+              <span>🍲</span> 19:00 — El Puesto
+            </button>
+            <button class="loop-tab-btn" data-target="loop-stage-4">
+              <span>🌙</span> 23:30 — La Noche
+            </button>
+          </div>
+
+          <!-- Stage 1 -->
+          <div id="loop-stage-1" class="loop-stage-content active">
+            <div class="stage-info">
+              <span class="stage-time">07:30 - 11:00 AM | Fase de Planificación</span>
+              <h4>Despertar con frío y trazar la ruta</h4>
+              <p>Desempañar los cristales con la manga, limpiar el marco de la foto de tu esposa en el tablero y revisar el mapa de papel doblado en el volante.</p>
+              <p>Visitar el minisúper o colmado del pueblo: comprar cartuchos de gas butano, galones de agua potable y paquetes de fideos instantáneos en oferta. Revisar nivel de aceite y presión de llantas antes de encender el motor.</p>
+              <span class="badge badge-cyan">Mecánica: Gestión de recursos y plan de ruta</span>
+            </div>
+            <div class="stage-visual">
+              <img src="assets/cover.jpg" alt="Preparación matutina">
+            </div>
+          </div>
+
+          <!-- Stage 2 -->
+          <div id="loop-stage-2" class="loop-stage-content">
+            <div class="stage-info">
+              <span class="stage-time">11:00 AM - 18:30 PM | Fase de Tránsito</span>
+              <h4>Carretera abierta y silencio</h4>
+              <p>Conducción a 60–80 km/h por carreteras nacionales secundarias. El coche se siente pesado en las cuestas; cuidar que el radiador no recaliente.</p>
+              <p>Sintonizar la radio para encontrar emisoras locales entre la estática o reproducir casetes viejos. Encuentros aleatorios: autoestopistas, camiones varados o puestos de fruta de temporada.</p>
+              <span class="badge badge-cyan">Mecánica: Físicas de inercia y control de temperatura</span>
+            </div>
+            <div class="stage-visual">
+              <img src="assets/cockpit.jpg" alt="Conducción en cabina interior bajo la lluvia">
+            </div>
+          </div>
+
+          <!-- Stage 3 -->
+          <div id="loop-stage-3" class="loop-stage-content">
+            <div class="stage-info">
+              <span class="stage-time">19:00 - 23:00 PM | Fase de Servicio</span>
+              <h4>Abrir cajuela y despachar vapor</h4>
+              <p>Aparcar en un apeadero de tren, cruce de fábricas o plaza de pueblo. Encender el farolillo y el hornillo de gas.</p>
+              <p>Llegan los clientes nocturnos: obreros, estudiantes y ancianos. Minijuego táctil de hervido justo, picado de cebollín y agregados que aumentan propina. Cada tazón vendido es dinero fresco en monedas.</p>
+              <span class="badge badge-cyan">Mecánica: QTE de cocina y micro-historias</span>
+            </div>
+            <div class="stage-visual">
+              <img src="assets/cover.jpg" alt="Puesto de fideos humeante en la cajuela">
+            </div>
+          </div>
+
+          <!-- Stage 4 -->
+          <div id="loop-stage-4" class="loop-stage-content">
+            <div class="stage-info">
+              <span class="stage-time">23:30 PM - 03:00 AM | Fase Introspectiva</span>
+              <h4>La máquina de escribir y el descanso</h4>
+              <p>Apagar el fuego, cerrar la cajuela y pasar al interior del vehículo con la manta sobre los hombros. Encender el candil a pilas.</p>
+              <p>Minijuego rítmico: las impresiones y anécdotas de los clientes se convierten en palabras a compás de las teclas mecánicas (*clack-clack-ding*). Al terminar una cuartilla, descansar para recuperar estamina.</p>
+              <span class="badge badge-cyan">Mecánica: Ritmo diegético y redacción</span>
+            </div>
+            <div class="stage-visual">
+              <img src="assets/typewriter.jpg" alt="Máquina de escribir nocturna en la parte trasera del auto">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05. Mecánicas de Conducción -->
+      <section id="mecanicas-conduccion" class="doc-section">
+        <span class="section-tag">Capítulo 05</span>
+        <h2 class="section-heading">Mecánicas de Conducción & La Cabina</h2>
+        <p>
+          La conducción en OBSOLETO no busca adrenalina ni derrapes: busca presencia y textura física. El coche es tu hogar, tu refugio y tu única herramienta de trabajo.
+        </p>
+
+        <div class="media-showcase">
+          <img src="assets/cockpit.jpg" alt="Interior del coche en noche lluviosa con medidores y foto de la esposa">
+          <div class="media-caption">
+            <span>Vista diegética en primera persona: medidores analógicos verdes, limpiaparabrisas y el retrato en el tablero con cinta.</span>
+            <span>CAPÍTULO 05 // LA CABINA</span>
+          </div>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Sistema del Auto</th>
+                <th>Indicador Diegético</th>
+                <th>Impacto Jugable</th>
+                <th>Solución en Ruta</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Combustible</strong></td>
+                <td>Aguja analógica en cluster principal</td>
+                <td>Si se agota en carretera, se requiere remolque caro o esperar auxilio.</td>
+                <td>Repostar en gasolineras rurales o bidón de reserva en cajuela.</td>
+              </tr>
+              <tr>
+                <td><strong>Temperatura Radiador</strong></td>
+                <td>Termómetro de agua (sube con cuestas pronunciadas)</td>
+                <td>Llegar a la zona roja causa vapor blanco y sobrecalentamiento de culata.</td>
+                <td>Detenerse en el arcén a ralentí o rellenar agua en arroyos/fuentes.</td>
+              </tr>
+              <tr>
+                <td><strong>Limpiaparabrisas</strong></td>
+                <td>Escobilla con ruido chirriante</td>
+                <td>Con lluvia fuerte, una goma gastada deja halos y reduce visibilidad.</td>
+                <td>Comprar repuesto genérico en desguace o gasolinera.</td>
+              </tr>
+              <tr>
+                <td><strong>Radio & Casete</strong></td>
+                <td>Sintonizador manual con dial de frecuencias</td>
+                <td>La estática aumenta en túneles y gargantas; sintonizar emisoras locales da pistas de eventos.</td>
+                <td>Coleccionar cintas de casete usadas con música folk y jazz lo-fi.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 06. El Puesto en la Cajuela -->
+      <section id="mecanicas-cajuela" class="doc-section">
+        <span class="section-tag">Capítulo 06</span>
+        <h2 class="section-heading">El Puesto de Fideos Instantáneos Tuneados</h2>
+        <p>
+          Kenji no es un chef gourmet: es un tipo que pasó años comiendo fideos de 100 yenes y aprendió a hacerlos memorables con casi nada.
+        </p>
+
+        <div class="grid-2">
+          <div class="feature-card">
+            <h3 class="card-title">Minijuego de Preparación Rápida</h3>
+            <ul style="padding-left: 1.25rem; color: var(--text-muted); line-height: 1.8;">
+              <li><strong>El Vertido del Agua:</strong> Mantener presionado el gatillo hasta la línea interna de nivel de agua. Pasarse vuelve el caldo aguado; quedarse corto deja los fideos duros.</li>
+              <li><strong>El Picado Rítmico:</strong> Sobre una pequeña tabla de madera apoyada en la moldura de la cajuela, cortar cebollín fresco a compás con un cuchillo plegable.</li>
+              <li><strong>El Huevo Pochado:</strong> Romper un huevo crudo en el momento preciso de reposo para que la yema se cueza suave con el calor residual del caldo tapado.</li>
+              <li><strong>Gotas de Topping:</strong> Aceite de sésamo tostado, copos de chile o nori tostado para otorgar propina extra según el gusto del cliente.</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="card-title">Perfiles de Clientes & Micro-Historias</h3>
+            <ul style="padding-left: 1.25rem; color: var(--text-muted); line-height: 1.8;">
+              <li><strong>Obreros Fabriles:</strong> Turno saliente a las 22:00. Buscan caldo bien salado y calor rápido. Dejan monedas sin rodeos.</li>
+              <li><strong>Camioneros de Larga Distancia:</strong> Comparten información sobre derrumbes en puertos de montaña o desvíos policiales.</li>
+              <li><strong>Estudiantes y Jóvenes Desorientados:</strong> Comen en silencio, cuentan sus dudas sobre el futuro y desbloquean temas creativos.</li>
+              <li><strong>Ancianos de Pueblos Vaciados:</strong> Trueque de patatas, puerros o setas de su huerto a cambio de un plato caliente y compañía.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07. Máquina de Escribir -->
+      <section id="mecanicas-escritura" class="doc-section">
+        <span class="section-tag">Capítulo 07</span>
+        <h2 class="section-heading">La Máquina de Escribir Nocturna</h2>
+        <p>
+          Al caer la noche, la vagoneta se convierte en estudio literario. La máquina de escribir mecánica es el conducto de la creatividad y la catarsis de Kenji.
+        </p>
+
+        <div class="media-showcase">
+          <img src="assets/typewriter.jpg" alt="Máquina de escribir sobre mesa plegable dentro de la vagoneta de noche con farol encendido">
+          <div class="media-caption">
+            <span>La cabina trasera convertida en refugio creativo: sonido analógico de teclas de plomo, lluvia en el cristal y té caliente.</span>
+            <span>CAPÍTULO 07 // LA ESTACIÓN CREATIVA</span>
+          </div>
+        </div>
+
+        <div class="feature-card" style="margin-top: 1.5rem;">
+          <h3 class="card-title">Mecánica Rítmica Diegética</h3>
+          <p>
+            No se trata de escribir prosa libre en un teclado, sino de un <strong>minijuego de ritmo analógico</strong>:
+          </p>
+          <ul style="padding-left: 1.25rem; color: var(--text-muted); line-height: 1.8; margin-top: 0.75rem;">
+            <li>Las frases clave inspiradas por los clientes del día aparecen como compases rítmicos.</li>
+            <li>Al pulsar a tiempo, el sonido metálico del plomo contra el papel (*clack-clack-clack*) genera una cadencia musical relajante acompañada de piano suave.</li>
+            <li>Al llegar al margen derecho suena el timbre (*¡ding!*); el jugador debe presionar retorno de carro (*shhh-clack*) para abrir la siguiente línea.</li>
+            <li>Si se pierde el compás repetidamente, dos tipos de plomo chocan y se atascan físicamente; el jugador debe desatorarlos manualmente antes de continuar.</li>
+            <li>Al reunir varias cuartillas, se pueden enviar por correo postal en las oficinas comarcales a fanzines y pequeñas revistas literarias.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 08. Gestión de Espacio -->
+      <section id="gestion-espacio" class="doc-section">
+        <span class="section-tag">Capítulo 08</span>
+        <h2 class="section-heading">Gestión de Espacio & Inventario (Tetris en la Cajuela)</h2>
+        <p>
+          El volumen interior del coche es finito. Todo lo que Kenji posee debe convivir en la parte trasera sin bloquear el espacio para dormir ni poner en riesgo la seguridad.
+        </p>
+
+        <div class="grid-2">
+          <div class="feature-card">
+            <h3 class="card-title">Reglas de Carga</h3>
+            <p><strong>El Asiento del Copiloto:</strong> Innegociable. Allí viaja la urna de cenizas con el retrato de su esposa fijado con cinta adhesiva al salpicadero.</p>
+            <p><strong>Cajas de Fideos vs. Saco de Dormir:</strong> Comprar 3 cajas de fideos al por mayor en una central de abastos ahorra yenes, pero obliga a dormir encogido esa noche.</p>
+            <p><strong>Llevar Pasajeros:</strong> Para aceptar a un autoestopista o hacer una entrega de favores entre pueblos, se deben reacomodar los bultos al piso.</p>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="card-title">Artículos Clave del Inventario</h3>
+            <ul style="padding-left: 1.25rem; color: var(--text-muted); line-height: 1.8;">
+              <li>Hornillo portátil de 1 quemador + latas de gas butano.</li>
+              <li>Olla pequeña de aluminio y tetera para servir caldo.</li>
+              <li>Garrafa de agua potable de 10 litros.</li>
+              <li>Saco de dormir de invierno y manta doblada.</li>
+              <li>Máquina de escribir mecánica compacta y paquete de cuartillas limpias.</li>
+              <li>Caja de herramientas: cinta americana, llave de cruceta, linterna y bujías.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 09. Grafo de Nodos & Biomas (Simulador Interactivo) -->
+      <section id="mundo-nodos" class="doc-section">
+        <span class="section-tag">Capítulo 09</span>
+        <h2 class="section-heading">Grafo de Nodos & Biomas (Simulador de Ruta)</h2>
+        <p>
+          En lugar de diseñar cientos de kilómetros de carreteras abiertas a mano —inviable para un desarrollo independiente—, OBSOLETO implementa un <strong>grafo de nodos tipo roguelike</strong> donde los tramos de carretera 3D se ensamblan proceduralmente a partir de 20 módulos maestros.
+        </p>
+
+        <!-- Node Map Simulator Widget -->
+        <div class="node-map-sim">
+          <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--amber-light); text-transform: uppercase;">
+            Simulador de Ruta Vial // Haz clic en cada nodo para inspeccionar el bioma:
+          </p>
+
+          <div class="node-graph-viz">
+            <div class="route-node active" data-node="chiba" title="Muelle Industrial">
+              ⚓
+              <span class="route-node-tooltip">Puerto Chiba</span>
+            </div>
+            <div class="route-node" data-node="fabrica" title="Polígono Fabril">
+              🏭
+              <span class="route-node-tooltip">Cruce Fábricas</span>
+            </div>
+            <div class="route-node" data-node="estacion" title="Apeadero Rural">
+              🚉
+              <span class="route-node-tooltip">Apeadero Rural</span>
+            </div>
+            <div class="route-node" data-node="onsen" title="Valle de Montaña">
+              ♨️
+              <span class="route-node-tooltip">Valle Termal</span>
+            </div>
+            <div class="route-node" data-node="soya" title="Cabo Sōya">
+              🌊
+              <span class="route-node-tooltip">Cabo Sōya (Fin)</span>
+            </div>
+          </div>
+
+          <div class="node-info-box">
+            <h4 id="node-info-title" style="color: var(--amber-light); margin-bottom: 0.4rem;">
+              Nodo 1: Muelle Industrial & Zona Portuaria
+            </h4>
+            <p id="node-info-desc" style="margin-bottom: 0.5rem; color: var(--text-main);">
+              Salida de turno obrero a las 22:00. Alta afluencia de trabajadores agotados que buscan sopa hirviendo y caldo espeso. Clima costero húmedo, vigilancia policial moderada.
+            </p>
+            <p id="node-info-stats" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--frost-cyan);">
+              Demanda de Fideos: Alta | Riesgo de Multa: Medio | Clima: Llovizna y viento marino
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. Modos de Juego & El Cabo Sōya -->
+      <section id="modos-finales" class="doc-section">
+        <span class="section-tag">Capítulo 10</span>
+        <h2 class="section-heading">Modos de Juego & El Clímax en Cabo Sōya</h2>
+
+        <div class="grid-3">
+          <div class="feature-card">
+            <h3 class="card-title">El Peregrinaje (Campaña)</h3>
+            <p>Travesía completa de 6 a 8 horas a través de 4 regiones japonesas. Desafío equilibrado de mantenimiento del coche, dinero para gasolina y avance de la novela.</p>
+          </div>
+          <div class="feature-card">
+            <h3 class="card-title">Ruta Corta (Modo Relato)</h3>
+            <p>Sesión autocontenida de ~2 horas que recorre 2 regiones específicas. Ideal para partidas de tarde con arco narrativo completo.</p>
+          </div>
+          <div class="feature-card">
+            <h3 class="card-title">Camino Infinito (Endless Zen)</h3>
+            <p>Se desbloquea al finalizar la historia. Carreteras procedurales sin fin, radio siempre sintonizada y libreta inagotable para relajarse o streaming.</p>
+          </div>
+        </div>
+
+        <div class="narrative-quote">
+          <strong>El Desenlace en el Cabo Sōya:</strong><br>
+          El asfalto se acaba donde la tierra muere frente al mar gris del norte. El viento frío azota el parabrisas. Apagas el motor; el radiador cruje en silencio mientras se enfría. Bajas del coche, hierves agua en la tetera y sirves dos tazones: uno para ti y otro que colocas sobre el cofre junto a la pequeña urna de cerámica.
+          En la máquina de escribir redactas la última cuartilla: no una queja contra la empresa que te despidió ni contra el destino, sino una carta de gratitud a tu compañera y a los extraños que te acogieron en la ruta. Al amanecer, esparces las cenizas en el mar. Has cumplido tu promesa.
+        </div>
+      </section>
+
+      <!-- 11. Identidad Artística & Sonora -->
+      <section id="arte-audio" class="doc-section">
+        <span class="section-tag">Capítulo 11</span>
+        <h2 class="section-heading">Identidad Artística & Diseño Sonoro</h2>
+
+        <div class="grid-2">
+          <div class="feature-card">
+            <h3 class="card-title">Estética Visual: Low-Poly Retro Stylized</h3>
+            <p>Inspirado en la era dorada de 32 bits (PS1/Saturn) pero con técnicas modernas de render:</p>
+            <ul style="padding-left: 1.25rem; color: var(--text-muted); line-height: 1.8;">
+              <li>Modelos tridimensionales con conteo reducido de polígonos y texturas planas o pixeladas con ligero dithering.</li>
+              <li>Iluminación volumétrica atmosférica: conos de luz halógena cortando la niebla en curvas solitarias.</li>
+              <li>Gotas de lluvia shaders que resbalan por las ventanillas y el parabrisas.</li>
+              <li>El contraste entre el exterior frío y desolado (tonos azul pizarra) y la calidez del interior del auto (naranja fuego y verde fósforo).</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <h3 class="card-title">Diseño Sonoro: El 50% de la Experiencia</h3>
+            <p>El silencio y el detalle acústico cargan con el peso emocional del videojuego:</p>
+            <ul style="padding-left: 1.25rem; color: var(--text-muted); line-height: 1.8;">
+              <li>Sonido diegético fiel: el murmullo continuo de la lluvia en el techo de chapa fina.</li>
+              <li>El ritmo seco del limpiaparabrisas (*chwic-chwic*).</li>
+              <li>El zumbido del hornillo portátil y el gorgoteo del agua al hervir.</li>
+              <li>El impacto metálico de las teclas mecánicas (*clack-clack-ding*).</li>
+              <li>Banda sonora ambiental con guitarra acústica solitaria, jazz lo-fi en casete y notas melancólicas de piano en los momentos de mayor soledad.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 12. Viabilidad Solo Dev -->
+      <section id="viabilidad" class="doc-section">
+        <span class="section-tag">Capítulo 12</span>
+        <h2 class="section-heading">Viabilidad Técnica para Desarrollador en Solitario</h2>
+        <p>
+          Este proyecto fue concebido intencionalmente para evitar la trampa del exceso de alcance (<em>scope creep</em>). Todas las decisiones creativas responden a un pragmatismo técnico riguroso:
+        </p>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Elemento de Juego</th>
+                <th>Solución Convencional (Costosa)</th>
+                <th>Solución Pragmática en OBSOLETO</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Mundo Abierto</strong></td>
+                <td>Modelar cientos de km a mano</td>
+                <td><strong>Grafo de nodos 2D + 20 tramos de carretera modular 3D</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Cinemáticas & Actuación</strong></td>
+                <td>Captura de movimiento y actores de voz</td>
+                <td><strong>Narrativa diegética por texto, diseño sonoro y micro-gestos</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Modelos de Personajes</strong></td>
+                <td>Foliage denso, rostros faciales HD</td>
+                <td><strong>Modelos low-poly con retratos 2D ilustrados en diálogos</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Minijuegos de Cocina</strong></td>
+                <td>Físicas de fluidos complejas en 3D</td>
+                <td><strong>Minijuegos QTE de precisión y timing 2D limpios</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 13. Roadmap de Prototipado -->
+      <section id="roadmap" class="doc-section">
+        <span class="section-tag">Capítulo 13</span>
+        <h2 class="section-heading">Hoja de Ruta de Prototipado (Roadmap en 4 Fases)</h2>
+
+        <div class="grid-2">
+          <div class="feature-card">
+            <span class="badge badge-amber">Semanas 1 a 4</span>
+            <h3 class="card-title" style="margin-top: 0.5rem;">Fase 1: El Tablero y la Inercia</h3>
+            <p>Controlador básico de coche con físicas de inercia pesada y cámara interior fija en cabina. 3 tramos de carretera modulares con niebla y lluvia.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="badge badge-amber">Semanas 5 a 8</span>
+            <h3 class="card-title" style="margin-top: 0.5rem;">Fase 2: La Cajuela y los Fideos</h3>
+            <p>Cámara fija en el maletero abierto. Hornillo funcional, minijuego de vertido de agua y cebollín. Sistema de monedas en el portavasos y cliente de prueba.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="badge badge-amber">Semanas 9 a 12</span>
+            <h3 class="card-title" style="margin-top: 0.5rem;">Fase 3: La Máquina y el Mapa</h3>
+            <p>Minijuego rítmico de máquina de escribir con audio diegético y atasco mecánico. Pantalla de mapa de carreteras en papel con bifurcaciones de nodos.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="badge badge-amber">Semanas 13 a 16</span>
+            <h3 class="card-title" style="margin-top: 0.5rem;">Fase 4: Vertical Slice (Demo Jugable)</h3>
+            <p>Integración de las tres capas en un ciclo diario completo (1 pueblo, 1 viaje, 1 noche). Preparación de demo para Steam / itch.io / Reddit.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--border-subtle); text-align: center; color: var(--text-dim); font-size: 0.85rem;">
+        <p><strong>OBSOLETO (時代遅れ)</strong> — Game Design Document & Pitch</p>
+        <p style="margin-top: 0.35rem;">Desarrollado con amor para la comunidad indie gamedev. Listo para desplegar en GitHub Pages.</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- Modal for Reddit Pitch -->
+  <div id="reddit-modal" class="modal-backdrop">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 class="modal-title">📋 Pitch Formateado para Reddit (r/gamedev & r/GameDesign)</h3>
+        <button id="close-reddit-modal" class="btn-icon">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 0.75rem;">
+          Copia y pega este texto directamente en un nuevo post de Reddit en Markdown:
+        </p>
+        <textarea id="reddit-markdown-text" class="modal-textarea" readonly># [Pitch / GDD] OBSOLETO — A contemplative driving & slice-of-life survival game about a laid-off salaryman living in his station wagon
+
+Hey everyone,
+
+I wanted to share the Game Design Document and technical architecture for a game concept I’ve been designing: **OBSOLETO** (Working Title).
+
+### High Concept & Elevator Pitch
+You play as a 47-year-old salaryman recently dismissed in a corporate restructuring after 25 years of invisible clerical service. Unable to pay city rent and refusing to burden his adult children, he packs what remains of his life into his 1990s station wagon: a camping gas burner, instant noodle cups, a mechanical typewriter, and an urn containing his late wife’s ashes on the passenger seat.
+
+To pay for gas, replacement spark plugs, and paper, he opens his trunk each evening on backroads and rural stops, selling "tuned" instant ramen to nocturnal workers, truckers, and solitary locals. At night, he sits in the rear cabin with his typewriter, turning conversations into rhythmic prose. His ultimate goal is to fulfill a delayed 20-year promise: drive across the country from south to north to scatter her ashes at Cape Sōya.
+
+---
+
+### Core Pillars
+1. **The Dignity of Routine:** Victory isn't building a fast-food empire. It’s earning enough coins for 15 liters of regular gasoline, a spark plug replacement, and 30 minutes of quiet writing time at night.
+2. **The Tripartite Loop:**
+   - **The Road (Midday):** Meditative, physics-heavy driving at 60–80 km/h with windshield wipers, radiator temperature monitoring, and analog cassette/radio.
+   - **The Trunk Stall (Dusk):** Fast-paced, tactile micro-management boiling water, slicing scallions, adding soft-boiled eggs, and chatting with locals.
+   - **The Rear Cabin (Night):** Diegetic typewriter rhythm minigame where keystrokes (*clack-clack-ding*) flow to lo-fi melodies.
+3. **Pure Diegesis:** No intrusive floating HUDs. Fuel is read on the analog needle; engine health in radiator steam; money in the console cup holder coins; maps on folded road paper over the steering wheel.
+
+---
+
+### Technical Scope & Solo-Dev Feasibility
+To keep production realistic without requiring an open-world budget:
+- **Node-Graph & Modular Road Assembly:** Rather than modeling hundreds of kilometers by hand, the game uses a roguelike node map. Highway segments are procedurally stitched from ~20 handcrafted modular pieces (curves, bridges, tunnels, forest straights).
+- **PS1 / Low-Poly Retro Stylized Visuals:** Minimalist flat or dithered textures. Volumetric fog, rain shaders, and amber lantern lighting do 80% of the visual heavy lifting.
+- **Environmental Storytelling:** No expensive voice acting or complex cinematic rigs. Deep diegetic sound design (rain on thin sheet metal, bubbling broth, clacking typewriter keys).
+
+I’d love to hear your feedback on the pacing and loop balance! Full interactive GDD and web design available on my GitHub Pages repo.</textarea>
+      </div>
+      <div class="modal-footer">
+        <button id="copy-reddit-btn" class="btn-icon btn-primary">
+          <span>📋</span> <span>Copiar al Portapapeles</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
