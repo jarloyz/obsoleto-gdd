@@ -83,14 +83,49 @@ Kenji, titubeando, mira sus últimos fideos y murmura una cifra modesta. Tres mo
 
 ## 4. El Bucle de Juego Diario (Core Loop)
 
-Cada ciclo en el juego representa una jornada de 24 horas dividida en 4 fases orgánicas:
+Cada ciclo en el juego representa una jornada de 24 horas dividida en 4 fases orgánicas interconectadas:
 
-```
-[08:00 - MAÑANA] ──────► [13:00 - LA RUTA] ──────► [19:00 - EL PUESTO] ──────► [23:30 - LA NOCHE]
-• Despertar en frío     • Conducir a 60-80 km/h   • Abrir cajuela           • Encender candil
-• Revisar mapa y ruta   • Vigilar temperatura     • Hervir agua y toppings  • Máquina de escribir
-• Comprar insumos       • Escuchar radio/cassette • Atender clientes        • Minijuego de ritmo
-• Aceite / Presión      • Autoestopistas / eventos • Cobrar monedas         • Dormir y guardar
+```mermaid
+flowchart TD
+    subgraph F1["01. MAÑANA (07:30 - 11:00) — Preparación & Sobriedad"]
+        A1["Despertar en el Probox<br/>(Desempañar cristales / Aseo)"] --> A2["Revisión Mecánica<br/>(Aceite, agua de radiador, gasolina)"]
+        A2 --> A3["Planificación en Mapa de Papel<br/>(Trazar ruta secundaria kokudo)"]
+        A3 --> A4["Compra en Colmado Rural<br/>(Fideos de 100¥, gas butano, raciones)"]
+    end
+
+    subgraph F2["02. LA RUTA (11:00 - 18:30) — Conducción & Dilemas"]
+        B1["Conducción Contemplativa (60-80 km/h)<br/>(Inercia por carga, radio FM / casetes)"]
+        B1 --> B2{"Dilemas del Camino"}
+        B2 -->|Autoestopista anciano| B3["Reorganizar cajas del maletero<br/>(Compañía y anécdota rural)"]
+        B2 -->|Puesto rústico de carretera| B4["Gastar últimas monedas en setas/pescado<br/>(Mejora el caldo nocturno)"]
+        B2 -->|Desvío sin señalizar| B5["Gasto extra de nafta y frenos<br/>(Descubrir mirador o aldea oculta)"]
+        B3 --> B6["Llegada a Apeadero / Michi-no-Eki"]
+        B4 --> B6
+        B5 --> B6
+    end
+
+    subgraph F3["03. EL PUESTO (19:00 - 23:00) — El Vapor de la Cajuela"]
+        C1["Aparcar y abrir portón trasero<br/>(Encender farolillo y hornillo)"] --> C2["Minijuego QTE de Cocina<br/>(Agua hirviendo al punto, cebollín, huevo)"]
+        C2 --> C3["Servir a Clientes Nocturnos<br/>(Obreros de fábrica, traileros, solitarios)"]
+        C3 --> C4["Cobro en Monedas Físicas<br/>(Fondo para gasolina y comida de mañana)"]
+        C4 --> C5["Escucha de Micro-Historias<br/>(Desbloquea recuerdos y temas de escritura)"]
+    end
+
+    subgraph F4["04. LA NOCHE (23:30 - 03:00) — Catarsis & Promesas"]
+        D1["Cabina Pública NTT Verde<br/>(Insertar moneda de 100¥)"]
+        D1 --> D2{"Dilema: Llamar al Hijo"}
+        D2 -->|Confesar la verdad| D3["Alivio moral sincero,<br/>pero culpa por ser una carga"]
+        D2 -->|Mentir 'Todo va bien'| D4["Orgullo intacto,<br/>pero profunda soledad"]
+        D3 --> D5["La Máquina de Escribir de Ella"]
+        D4 --> D5
+        D5 --> D6["Tecleo Rítmico (clack-clack-ding)<br/>(Relatar la jornada cruda sin adornos)"]
+        D6 --> D7["Descanso en el Probox<br/>(Un día más cerca de Cabo Sōya)"]
+    end
+
+    F1 --> F2
+    F2 --> F3
+    F3 --> F4
+    D7 -.->|Amanecer: Nuevo Ciclo| F1
 ```
 
 | Fase | Horario Diegético | Mecánicas Activas | Estado Emocional del Jugador |

@@ -311,6 +311,62 @@
             </div>
           </div>
         </div>
+
+        <!-- Diagrama de Flujo de Sistemas (Mermaid) -->
+        <div class="diagram-wrapper">
+          <div class="diagram-header">
+            <div>
+              <span class="badge badge-amber">Arquitectura de Bucle</span>
+              <h4 style="margin: 0.35rem 0 0.15rem 0; font-size: 1.15rem; color: var(--steam-white);">Diagrama de Sistemas & Toma de Decisiones</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Relación cíclica entre las 4 fases diarias, consumo de recursos y dilemas morales.</p>
+            </div>
+            <span class="badge badge-cyan" style="align-self: flex-start;">Renderizado Dinámico Mermaid</span>
+          </div>
+          <div class="mermaid-container">
+            <pre class="mermaid">
+flowchart TD
+    subgraph F1["01. MAÑANA (07:30 - 11:00) — Preparación & Sobriedad"]
+        A1["Despertar en el Probox<br/>(Desempañar cristales / Aseo)"] --> A2["Revisión Mecánica<br/>(Aceite, agua de radiador, gasolina)"]
+        A2 --> A3["Planificación en Mapa de Papel<br/>(Trazar ruta secundaria kokudo)"]
+        A3 --> A4["Compra en Colmado Rural<br/>(Fideos de 100¥, gas butano, raciones)"]
+    end
+
+    subgraph F2["02. LA RUTA (11:00 - 18:30) — Conducción & Dilemas"]
+        B1["Conducción Contemplativa (60-80 km/h)<br/>(Inercia por carga, radio FM / casetes)"]
+        B1 --> B2{"Dilemas del Camino"}
+        B2 -->|Autoestopista anciano| B3["Reorganizar cajas del maletero<br/>(Compañía y anécdota rural)"]
+        B2 -->|Puesto rústico de carretera| B4["Gastar últimas monedas en setas/pescado<br/>(Mejora el caldo nocturno)"]
+        B2 -->|Desvío sin señalizar| B5["Gasto extra de nafta y frenos<br/>(Descubrir mirador o aldea oculta)"]
+        B3 --> B6["Llegada a Apeadero / Michi-no-Eki"]
+        B4 --> B6
+        B5 --> B6
+    end
+
+    subgraph F3["03. EL PUESTO (19:00 - 23:00) — El Vapor de la Cajuela"]
+        C1["Aparcar y abrir portón trasero<br/>(Encender farolillo y hornillo)"] --> C2["Minijuego QTE de Cocina<br/>(Agua hirviendo al punto, cebollín, huevo)"]
+        C2 --> C3["Servir a Clientes Nocturnos<br/>(Obreros de fábrica, traileros, solitarios)"]
+        C3 --> C4["Cobro en Monedas Físicas<br/>(Fondo para gasolina y comida de mañana)"]
+        C4 --> C5["Escucha de Micro-Historias<br/>(Desbloquea recuerdos y temas de escritura)"]
+    end
+
+    subgraph F4["04. LA NOCHE (23:30 - 03:00) — Catarsis & Promesas"]
+        D1["Cabina Pública NTT Verde<br/>(Insertar moneda de 100¥)"]
+        D1 --> D2{"Dilema: Llamar al Hijo"}
+        D2 -->|Confesar la verdad| D3["Alivio moral sincero,<br/>pero culpa por ser una carga"]
+        D2 -->|Mentir 'Todo va bien'| D4["Orgullo intacto,<br/>pero profunda soledad"]
+        D3 --> D5["La Máquina de Escribir de Ella"]
+        D4 --> D5
+        D5 --> D6["Tecleo Rítmico (clack-clack-ding)<br/>(Relatar la jornada cruda sin adornos)"]
+        D6 --> D7["Descanso en el Probox<br/>(Un día más cerca de Cabo Sōya)"]
+    end
+
+    F1 --> F2
+    F2 --> F3
+    F3 --> F4
+    D7 -.->|Amanecer: Nuevo Ciclo| F1
+            </pre>
+          </div>
+        </div>
       </section>
 
       <!-- 05. Mecánicas de Conducción -->
@@ -687,31 +743,36 @@ Hey everyone,
 I wanted to share the Game Design Document and technical architecture for a game concept I’ve been designing: **OBSOLETO** (Working Title).
 
 ### High Concept & Elevator Pitch
-You play as Kenji, a 47-year-old salaryman recently dismissed in a corporate restructuring after 25 years of invisible clerical service — replaced by a fresh graduate who makes a third of his salary even without knowing how to handle half the work. Unable to pay city rent and refusing to burden his adult children, he packs what remains of his life into his faithful 1994 Toyota Corolla station wagon: a portable camping stove, instant noodle cups, and a camping blanket.
+Set in **contemporary Japan**, you play as Kenji (47), an administrative salaryman laid off during a corporate restructuring after 25 years of loyal service — replaced by a fresh graduate who earns a third of his salary through automated office tools. Evicted from his metropolitan apartment and fiercely refusing to burden his adult children, he pawns his smartphone for emergency groceries and packs what remains into his austere **1998 Toyota Probox** — the quintessential utilitarian Japanese company wagon with rear seats that fold completely flat.
 
-As he packs, he confronts his late wife’s ceramic urn, her framed portrait, and a mountain of unkept promises. The heaviest one: the road trip across Japan to Cape Sōya he always swore they'd take «this year» before cancer took her. In the last box, he finds **her portable mechanical typewriter** — she always dreamed of being a writer, and he had promised her quiet time to write that he never gave her. 
+In the back, he carries:
+- His late wife's ceramic urn and her framed portrait taped to the air vents.
+- A crumpled notepad with his son's home phone number (no mobile data, no GPS).
+- A 35mm film camera with 24 exposures left — bought 15 years ago for a road trip they endlessly postponed and never took.
+- A folded paper road map bought at a gas station.
+- **Her mechanical typewriter:** she dreamed of being a published novelist, a promise he broke under 25 years of unpaid overtime.
 
-Deemed "obsolete" by corporate society, Kenji finds a quiet, fierce resolve: he will fulfill those promises. He will drive to Cape Sōya, selling "tuned" instant ramen from his open trunk to night workers and truckers to buy fuel, and each night in the rear cabin, he will type on her machine to finish the novel she never got to write.
+Deemed "obsolete" by modern corporate society, Kenji resolves to fulfill those promises: drive north all the way to Cape Sōya. To fund fuel without digital payment apps, he opens his Probox rear hatch each evening to sell customized instant noodles to night shift workers; from green NTT coin payphones, he faces the agonizing choice to tell his son the truth or pretend "everything is great"; and every midnight, he types out the raw, unembellished truth of his journey on her machine.
 
 ---
 
 ### Core Pillars
-1. **The Dignity of Routine:** Victory isn't building a fast-food empire. It’s earning enough coins for 15 liters of regular gasoline, a spark plug replacement, and 30 minutes of quiet writing time at night.
-2. **The Tripartite Loop:**
-   - **The Road (Midday):** Meditative, physics-heavy driving at 60–80 km/h with windshield wipers, radiator temperature monitoring, and analog cassette/radio.
-   - **The Trunk Stall (Dusk):** Fast-paced, tactile micro-management boiling water, slicing scallions, adding soft-boiled eggs, and chatting with locals.
-   - **The Rear Cabin (Night):** Diegetic typewriter rhythm minigame where keystrokes (*clack-clack-ding*) flow to lo-fi melodies.
-3. **Pure Diegesis:** No intrusive floating HUDs. Fuel is read on the analog needle; engine health in radiator steam; money in the console cup holder coins; maps on folded road paper over the steering wheel.
+1. **The Dignity of Routine:** Victory isn't building a fast-food franchise empire. It’s earning enough coins for 15 liters of regular gasoline, engine coolant, and having 30 quiet midnight minutes to type.
+2. **The Tripartite Loop (Complete Mermaid Diagram in GDD):**
+   - **Morning & The Road:** Meditative driving at 60–80 km/h, coolant temp vigilance, paper map navigation, and micro-dilemmas (picking up an elderly hitchhiker, buying wild mushrooms from lonely farm stalls, taking unmarked mountain exits).
+   - **The Trunk Stall (Dusk):** Fast-paced, tactile micro-management boiling water, slicing scallions over the bumper, dropping raw eggs, collecting physical coins and listening to customer confessions.
+   - **The Rear Cabin (Night):** Introspective coin payphone calls to his son, followed by typing raw daily memoirs on her mechanical typewriter (*clack-clack-ding*).
+3. **Pure Diegesis:** No mini-maps or digital HUD clutter. Fuel is read on the analog needle; engine health in radiator steam; money in the cup holder coins; route navigation on the steering wheel's paper map.
 
 ---
 
 ### Technical Scope & Solo-Dev Feasibility
 To keep production realistic without requiring an open-world budget:
-- **Node-Graph & Modular Road Assembly:** Rather than modeling hundreds of kilometers by hand, the game uses a roguelike node map. Highway segments are procedurally stitched from ~20 handcrafted modular pieces (curves, bridges, tunnels, forest straights).
-- **PS1 / Low-Poly Retro Stylized Visuals:** Minimalist flat or dithered textures. Volumetric fog, rain shaders, and amber lantern lighting do 80% of the visual heavy lifting.
-- **Environmental Storytelling:** No expensive voice acting or complex cinematic rigs. Deep diegetic sound design (rain on thin sheet metal, bubbling broth, clacking typewriter keys).
+- **Node-Graph & Modular Road Assembly:** Rather than modeling endless kilometers, a roguelike node map connects handcrafted highway slices (tunnels, mountain bends, coastal bridges).
+- **Stylized Retro 32-bit Visuals (Low-Poly):** Minimalist geometry elevated by volumetric headlights, rain shaders, and amber lantern reflections.
+- **Environmental Storytelling:** Diegetic foley audio (rain pelting thin sheet metal, bubbling broth, clacking keys) without costly voice acting rigs.
 
-I’d love to hear your feedback on the pacing and loop balance! Full interactive GDD and web design available on my GitHub Pages repo.</textarea>
+The complete GDD (English & Spanish) with our interactive systems architecture & Mermaid flow diagram is live on my GitHub Pages repo. I’d love your brutal thoughts on the mechanics and tone!</textarea>
       </div>
       <div class="modal-footer">
         <button id="copy-reddit-btn" class="btn-icon btn-primary">
@@ -721,6 +782,8 @@ I’d love to hear your feedback on the pacing and loop balance! Full interactiv
     </div>
   </div>
 
+  <!-- Mermaid.js for Vector Flowcharts -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

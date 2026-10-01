@@ -74,6 +74,51 @@ Pain turns into quiet steel:
 
 ## 4. The Daily 24-Hour Loop
 
+Each cycle represents a continuous 24-hour journey divided into 4 interconnected phases:
+
+```mermaid
+flowchart TD
+    subgraph PHASE_1["01. MORNING (07:30 - 11:00) — Planning & Frugality"]
+        A1["Wake up in the Probox<br/>(Defrost windshield / Wash up)"] --> A2["Resource Inspection<br/>(Engine oil, coolant, fuel level)"]
+        A2 --> A3["Paper Road Map Route Planning<br/>(Choose secondary kokudo national route)"]
+        A3 --> A4["Local Grocery Run<br/>(100¥ noodles, butane canisters, fresh eggs)"]
+    end
+
+    subgraph PHASE_2["02. THE ROAD (11:00 - 18:30) — Driving & Contemplation"]
+        B1["Heavy Inertia Driving (60-80 km/h)<br/>(Cargo weight, windshield rain, FM radio static)"]
+        B1 --> B2{"Roadside Dilemmas"}
+        B2 -->|Elderly Hitchhiker| B3["Reorganize trunk cartons<br/>(Gain companionship and rural folklore)"]
+        B2 -->|Lonely Highway Stall| B4["Spend scarce coins on wild mushrooms/fish<br/>(Boosts evening broth value)"]
+        B2 -->|Unmarked Detour| B5["Burn extra fuel and wear brakes<br/>(Discover hidden shrine or scenic overlook)"]
+        B3 --> B6["Arrive at Night Destination<br/>(Train siding, industrial pier, Michi-no-Eki)"]
+        B4 --> B6
+        B5 --> B6
+    end
+
+    subgraph PHASE_3["03. THE TRUNK (19:00 - 23:00) — Midnight Broth Stall"]
+        C1["Open Rear Hatch & Set Up<br/>(Light battery lantern and gas burner)"] --> C2["Cooking QTE Minigame<br/>(Precision pour line, scallion slicing, soft egg)"]
+        C2 --> C3["Serve Night Owls<br/>(Factory shift workers, truckers, students)"]
+        C3 --> C4["Collect Physical Coins<br/>(Funds for fuel and next day's groceries)"]
+        C4 --> C5["Listen to Customer Stories<br/>(Unlocks memories and writing prompts)"]
+    end
+
+    subgraph PHASE_4["04. MIDNIGHT (23:30 - 03:00) — Catharsis & Promises"]
+        D1["Green NTT Public Payphone<br/>(Insert 100¥ coin)"]
+        D1 --> D2{"Dilemma: Call Your Son"}
+        D2 -->|Tell the harsh truth| D3["Relieves moral burden,<br/>intensifies familial guilt"]
+        D2 -->|Lie: 'Everything is fine'| D4["Preserves pride,<br/>deepens existential solitude"]
+        D3 --> D5["Her Mechanical Typewriter"]
+        D4 --> D5
+        D5 --> D6["Rhythmic Typing (clack-clack-ding)<br/>(Writing raw daily memoir with zero embellishment)"]
+        D6 --> D7["Sleep in Probox Flat Rear Bed<br/>(One step closer to Cape Sōya)"]
+    end
+
+    PHASE_1 --> PHASE_2
+    PHASE_2 --> PHASE_3
+    PHASE_3 --> PHASE_4
+    D7 -.->|Next Sunrise / Next Stage| PHASE_1
+```
+
 | Phase | In-Game Clock | Active Mechanics | Emotional Tone |
 |---|---|---|---|
 | **Morning** | 07:30 – 11:00 | Defrost windshield, review paper map, inspect oil/tire pressure, buy groceries at local stalls. | Quiet caution, frugal planning. |

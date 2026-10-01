@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAudioAmbience();
   initRedditModal();
   initMobileMenu();
+  initMermaidDiagram();
 });
 
 /* --------------------------------------------------------------------------
@@ -343,3 +344,28 @@ function showToast(msg) {
     toast.classList.remove('show');
   }, 2800);
 }
+
+/* --------------------------------------------------------------------------
+   8. Mermaid Diagram Initialization
+   -------------------------------------------------------------------------- */
+function initMermaidDiagram() {
+  if (window.mermaid) {
+    window.mermaid.initialize({
+      startOnLoad: true,
+      theme: 'dark',
+      securityLevel: 'loose',
+      themeVariables: {
+        darkMode: true,
+        background: '#090c10',
+        primaryColor: '#1e293b',
+        primaryTextColor: '#f8fafc',
+        primaryBorderColor: '#38bdf8',
+        lineColor: '#f59e0b',
+        secondaryColor: '#1a2332',
+        tertiaryColor: '#0f141c',
+        fontFamily: "'Inter', sans-serif"
+      }
+    });
+  }
+}
+
