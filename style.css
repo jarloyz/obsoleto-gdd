@@ -178,6 +178,43 @@ body {
   color: #090c10;
 }
 
+/* Language Switcher */
+.lang-switch-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.25rem 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.lang-btn {
+  color: var(--text-dim);
+  text-decoration: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.lang-btn:hover {
+  color: var(--text-main);
+}
+
+.lang-btn.active {
+  color: var(--amber-light);
+  background: var(--amber-glow);
+  border: 1px solid var(--border-accent);
+}
+
+.lang-divider {
+  color: var(--text-dim);
+  font-size: 0.75rem;
+}
+
 /* App Container Layout */
 .app-container {
   display: flex;
@@ -562,45 +599,138 @@ p {
   display: block;
 }
 
-/* Image Showcase Banner */
-.media-showcase {
-  margin: 2.5rem 0;
+/* Technical Blueprint & Vector Schematics */
+.blueprint-card {
+  margin: 2rem 0;
+  background: #080c14;
+  background-image: 
+    linear-gradient(rgba(56, 189, 248, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.06) 1px, transparent 1px),
+    radial-gradient(ellipse at 50% 0%, rgba(56, 189, 248, 0.08) 0%, transparent 70%);
+  background-size: 20px 20px, 20px 20px, 100% 100%;
+  border: 1px solid rgba(56, 189, 248, 0.25);
   border-radius: var(--radius-md);
-  overflow: hidden;
-  border: 1px solid var(--border-subtle);
+  padding: 1.5rem;
   position: relative;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
 }
 
-.media-showcase img {
+.blueprint-card::before {
+  content: "+";
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--frost-cyan);
+  opacity: 0.6;
+}
+
+.blueprint-card::after {
+  content: "+";
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--frost-cyan);
+  opacity: 0.6;
+}
+
+.blueprint-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dashed rgba(56, 189, 248, 0.2);
+  margin-bottom: 1rem;
+}
+
+.blueprint-id {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--frost-cyan);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.blueprint-title {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--steam-white);
+  font-weight: 600;
+}
+
+.blueprint-svg {
   width: 100%;
   height: auto;
   display: block;
+  margin: 1rem 0;
 }
 
-.media-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(180deg, transparent, rgba(9, 12, 16, 0.95) 85%);
-  padding: 2rem 1.5rem 1rem;
-  font-size: 0.85rem;
-  color: #cbd5e1;
+.blueprint-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed rgba(56, 189, 248, 0.2);
+}
+
+.blueprint-spec-item {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
 }
 
-.media-caption span:first-child {
-  font-style: italic;
-}
-
-.media-caption span:last-child {
+.blueprint-spec-label {
   font-family: var(--font-mono);
-  color: var(--amber-primary);
-  font-size: 0.75rem;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
+
+.blueprint-spec-val {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: #93c5fd;
+  font-weight: 500;
+}
+
+/* Stage Visual Schematic Cards */
+.stage-schematic {
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: #080c14;
+  background-image: linear-gradient(rgba(245, 158, 11, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(245, 158, 11, 0.04) 1px, transparent 1px);
+  background-size: 16px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.schematic-callout {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 2px solid var(--amber-primary);
+  margin-bottom: 0.5rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 0.8rem;
+}
+
+.schematic-callout-code {
+  font-family: var(--font-mono);
+  color: var(--amber-light);
+  font-size: 0.72rem;
+}
+
 
 /* Tables */
 .table-wrapper {

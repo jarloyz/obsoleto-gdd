@@ -136,7 +136,9 @@ function initNodeMapSimulator() {
   const infoDesc = document.getElementById('node-info-desc');
   const infoStats = document.getElementById('node-info-stats');
 
-  const nodeData = {
+  const isEn = document.documentElement.lang === 'en';
+
+  const nodeDataEs = {
     chiba: {
       title: 'Nodo 1: Muelle Industrial & Zona Portuaria',
       desc: 'Salida de turno obrero a las 22:00. Alta afluencia de trabajadores agotados que buscan sopa hirviendo y caldo espeso. Clima costero húmedo, vigilancia policial moderada.',
@@ -163,6 +165,36 @@ function initNodeMapSimulator() {
       stats: 'Destino Final | Catarsis Narrativa | Clima: Temporal del mar del Norte'
     }
   };
+
+  const nodeDataEn = {
+    chiba: {
+      title: 'Node 1: Industrial Pier & Harbor Zone',
+      desc: 'Night shift egress at 22:00. Heavy stream of weary dockworkers seeking boiling hot broth. Humid coastal rain, moderate police presence.',
+      stats: 'Noodle Demand: High | Fine Risk: Moderate | Weather: Coastal drizzle and chilly sea winds'
+    },
+    fabrica: {
+      title: 'Node 2: Industrial Siding & Truck Stop',
+      desc: 'Rutted concrete roadways packed with diesel haulers. 24-hour rural gas station with basic spark plugs and engine oil. Great spot to buy cheap butane canisters.',
+      stats: 'Noodle Demand: Medium-High | Parts: Inexpensive | Weather: Soot and highway fog'
+    },
+    estacion: {
+      title: 'Node 3: Rural Railroad Siding',
+      desc: 'Aging population and quiet time. Low coin sales but heartfelt dialogue; bartering scallions and fresh farm eggs with a retired rail lineman.',
+      stats: 'Noodle Demand: Low (Barter) | Writing Inspiration: +40% | Weather: Biting mountain breeze'
+    },
+    onsen: {
+      title: 'Node 4: Onsen Valley & Misty Pass',
+      desc: 'Mountain switchbacks with 180° hairpin turns. Radiator strains in 3rd gear. Weekend hot-spring travelers eager to tip generously for steaming ramen cups.',
+      stats: 'Noodle Demand: Very High | Radiator Wear: Severe | Weather: Dense sulfurous mist and steam'
+    },
+    soya: {
+      title: 'Node 5: Cape Sōya (End of the Road)',
+      desc: 'The northernmost point of Japan. The asphalt ends against the freezing sea. Cut the engine, look out at the grey waves beside her portrait, and scatter the ashes.',
+      stats: 'Final Destination | Quiet Catharsis | Weather: Northern polar squall'
+    }
+  };
+
+  const nodeData = isEn ? nodeDataEn : nodeDataEs;
 
   nodes.forEach((node) => {
     node.addEventListener('click', () => {
@@ -191,6 +223,7 @@ let isAudioPlaying = false;
 function initAudioAmbience() {
   const toggleBtn = document.getElementById('audio-toggle-btn');
   if (!toggleBtn) return;
+  const isEn = document.documentElement.lang === 'en';
 
   toggleBtn.addEventListener('click', () => {
     if (!audioCtx) {
@@ -204,16 +237,16 @@ function initAudioAmbience() {
 
     if (!isAudioPlaying) {
       startAmbientRain(audioCtx);
-      toggleBtn.innerHTML = '<span>🌧️</span> <span>Lluvia: Activa</span>';
+      toggleBtn.innerHTML = isEn ? '<span>🌧️</span> <span>Ambiance: Active</span>' : '<span>🌧️</span> <span>Lluvia: Activa</span>';
       toggleBtn.classList.add('btn-primary');
       isAudioPlaying = true;
-      showToast('Ambiente sonoro de lluvia encendido 🌧️');
+      showToast(isEn ? 'Rain soundscape enabled 🌧️' : 'Ambiente sonoro de lluvia encendido 🌧️');
     } else {
       stopAmbientRain();
-      toggleBtn.innerHTML = '<span>🌧️</span> <span>Ambiente: Apagado</span>';
+      toggleBtn.innerHTML = isEn ? '<span>🌧️</span> <span>Ambiance: Off</span>' : '<span>🌧️</span> <span>Ambiente: Apagado</span>';
       toggleBtn.classList.remove('btn-primary');
       isAudioPlaying = false;
-      showToast('Ambiente sonoro en silencio');
+      showToast(isEn ? 'Soundscape muted' : 'Ambiente sonoro en silencio');
     }
   });
 }
