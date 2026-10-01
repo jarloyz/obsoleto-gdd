@@ -57,6 +57,22 @@ Kenji, titubeando, mira sus últimos fideos y murmura una cifra modesta. Tres mo
 
 ---
 
+## 2.1 Manifiesto del Autor & Génesis: Batallas Silenciosas y Caldo Caliente
+
+> *«No todas las batallas se libran con rifles de asalto ni en guerras sangrientas. La mayoría de nosotros libramos batallas invisibles cada día: contra el frío, la rutina y el miedo a quedar descartados.»*
+
+La inspiración para **OBSOLETO** no nació de una lluvia de ideas corporativa ni de un análisis de retención en Steam. Nació de vivencias, relatos reales, videos y documentales de la vida cotidiana en los márgenes de Japón, y de mis propios sueños. De ver cómo el tiempo pasa implacable, cómo las ilusiones van y vienen, y cómo para las grandes corporaciones muchas veces no somos más que jaladores de palanca intercambiables.
+
+Como arquitecto en Inteligencia Artificial, vivo a diario la paradoja de nuestra era: una tecnología portentosa que con demasiada frecuencia se usa con pereza para inundar el medio con historias vacías, juegos sin alma y personajes sin tropos humanos ni dolor real. Vivimos una fractura generacional sorda: los nuevos que desprecian a los viejos creyendo que nada antes de ellos tuvo valor, y los viejos que se niegan a adaptarse creyendo que cualquier cambio es una amenaza. Pero al final de esa discusión, hay un miedo latente que a todos nos toca: **el temor a que nuestro tiempo se agote y el mundo nos declare obsoletos**.
+
+Es una realidad que millones ya viven: una mezcla de añoranza, sueños rotos y una historia cotidiana que nunca se detiene. No importa cuánto aguantes: al día siguiente tendrás que aguantar un poco más, sin importar el frío, el hambre o el cansancio acumulado en la espalda.
+
+Todos los días todos luchamos por lo mismo, pero algunos cargan batallas mucho más duras. Y a veces, en medio de la niebla de un arcén solitario, **una simple sopa caliente es lo único que un ser humano necesita para sonreír, recuperar el aliento y seguir adelante un kilómetro más.**
+
+Este juego no está diseñado para los puristas del género, sino para los honestos. Para quienes han sentido el peso de una responsabilidad no correspondida, la nostalgia de una llamada que no se atrevieron a hacer, o el consuelo de una cena modesta tras un día interminable.
+
+---
+
 ## 3. Pilares Fundamentales de Diseño (Core Pillars)
 
 ```

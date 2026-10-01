@@ -48,6 +48,22 @@ Pain turns into quiet steel:
 
 ---
 
+## 2.1 Author's Manifesto & Genesis: Silent Battles and Hot Broth
+
+> *«Not all battles are fought with assault rifles or in bloody wars. Most of us fight invisible battles every single day: against the cold, against routine, and against the terror of being discarded.»*
+
+The inspiration for **OBSOLETO** didn't come from a boardroom meeting analyzing Steam retention curves. It came from real-life experiences, forgotten accounts, countless videos documenting quiet daily life on the fringes of Japan, and my own dreams. From watching time slip away relentlessly, watching dreams come and go, and realizing that to modern corporations, humans are often treated as nothing more than replaceable lever-pullers.
+
+As an AI Architect, I face the paradox of our era every day: a colossal technological capability too often abused out of laziness to flood the world with hollow stories, soulless games, and flat characters devoid of human tropes or genuine pain. We live in a quiet generational clash: the young who look down on the old, convinced nothing before them held any value; and the old who refuse to adapt, convinced every novelty is a disaster. Yet beneath all that noise lies a latent terror that touches everyone: **the fear that your time will run out, and the world will declare you obsolete**.
+
+This is a reality millions already endure: an ache of nostalgia, broken promises, and an endless story that never pauses. No matter how much you endure today, tomorrow you will have to endure a little more, regardless of the freezing rain, hunger, or bone-deep exhaustion.
+
+Every day, we are all fighting for the same thing—survival and purpose—but some people carry far heavier battles. And those battles aren't fought with gunpowder: they are fought silently in the front seat of a beat-up car on a frozen roadside. And sometimes, in the middle of that storm, **a simple bowl of hot broth is all a human being needs to smile, catch their breath, and keep going for one more kilometer.**
+
+This game is not designed for genre purists; it is for the honest ones. For those who know the weight of unreciprocated loyalty, the quiet sting of a phone call you were too proud to make, and the solace of modest warmth at the end of an exhausting shift.
+
+---
+
 ## 3. Core Pillars of Game Design
 
 ```

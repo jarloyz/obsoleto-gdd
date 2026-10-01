@@ -65,6 +65,7 @@
           <li><a href="#hero" class="active"><span>00.</span> Overview & Specs</a></li>
           <li><a href="#high-concept"><span>01.</span> High Concept & Factsheet</a></li>
           <li><a href="#narrative"><span>02.</span> Narrative & Character Arc</a></li>
+          <li><a href="#genesis"><span>02b.</span> Genesis & Manifesto</a></li>
           <li><a href="#pillars"><span>03.</span> Core Design Pillars</a></li>
           <li><a href="#daily-loop"><span>04.</span> The Daily 24h Loop</a></li>
           <li><a href="#driving-mechanics"><span>05.</span> Driving & Cockpit</a></li>
@@ -104,51 +105,41 @@
               «You are 47 years old, driving an austere 1998 Toyota Probox with instant noodles in the trunk, your late wife's ashes on the passenger seat, and her analog typewriter in the rear bed.»
             </p>
 
-            <!-- Vector Schematic of Toyota Probox -->
-            <svg class="blueprint-svg" viewBox="0 0 900 240" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-height: 220px;">
-              <!-- Grid Lines -->
-              <line x1="50" y1="205" x2="850" y2="205" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4"/>
-              <line x1="120" y1="20" x2="120" y2="205" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2 4" opacity="0.2"/>
-              <line x1="450" y1="20" x2="450" y2="205" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2 4" opacity="0.2"/>
-              <line x1="780" y1="20" x2="780" y2="205" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2 4" opacity="0.2"/>
+            <!-- Roadside Decision Tree -->
+            <div class="decision-tree-container" style="margin: 1.5rem 0; padding: 1.25rem; background: rgba(9, 12, 16, 0.75); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+                <span class="blueprint-id" style="color: var(--amber-light);">ORGANIC DECISION TREE // KOKUDŌ NATIONAL HIGHWAY</span>
+                <span class="badge badge-amber">ROADSIDE DILEMMAS</span>
+              </div>
+              <div class="grid-3" style="gap: 1rem;">
+                <div class="feature-card" style="margin: 0; background: rgba(255, 255, 255, 0.02); border-left: 2px solid var(--frost-cyan);">
+                  <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--frost-cyan); margin-bottom: 0.25rem;">[ROADSIDE DILEMMA 01]</div>
+                  <h4 style="font-size: 0.95rem; color: var(--steam-white); margin-bottom: 0.35rem;">👴 Elderly Hitchhiker</h4>
+                  <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.5;">
+                    <strong style="color: var(--amber-light);">Gain:</strong> Intimate passenger dialogue & rural lore unlocked.<br>
+                    <strong style="color: var(--crimson-stamp);">Cost:</strong> Shifting noodle crates to floor to free up the seat.
+                  </p>
+                </div>
 
-              <!-- Car Silhouette (Toyota Probox Station Wagon) -->
-              <path d="M 130 175 L 145 175 Q 155 135 195 135 Q 235 135 245 175 L 635 175 Q 645 135 685 135 Q 725 135 735 175 L 775 175 L 780 130 Q 775 110 735 105 L 590 100 L 420 50 L 220 50 L 160 105 L 130 115 Z" 
-                    stroke="#38bdf8" stroke-width="2.5" fill="rgba(56, 189, 248, 0.05)"/>
-              
-              <!-- Roof & Windows -->
-              <path d="M 230 55 L 415 55 L 580 102 L 245 102 Z" stroke="#38bdf8" stroke-width="1.5" fill="rgba(56, 189, 248, 0.1)"/>
-              <line x1="330" y1="55" x2="330" y2="102" stroke="#38bdf8" stroke-width="1.5"/>
-              <line x1="440" y1="62" x2="440" y2="102" stroke="#38bdf8" stroke-width="1.5"/>
-              
-              <!-- Front Windshield & Hood -->
-              <path d="M 580 102 L 735 107 L 775 115" stroke="#38bdf8" stroke-width="1.5"/>
-              <!-- Rear Hatch Door Line (Flat Floor Line) -->
-              <line x1="220" y1="50" x2="160" y2="105" stroke="#f59e0b" stroke-width="2"/>
-              <line x1="160" y1="105" x2="155" y2="175" stroke="#f59e0b" stroke-width="2" stroke-dasharray="3 3"/>
-              
-              <!-- Flat Fold Floor (Interior) -->
-              <line x1="160" y1="140" x2="430" y2="140" stroke="#f59e0b" stroke-width="2"/>
-              
-              <!-- Wheels -->
-              <circle cx="195" cy="175" r="28" stroke="#38bdf8" stroke-width="2" fill="#080c14"/>
-              <circle cx="195" cy="175" r="12" stroke="#93c5fd" stroke-width="1.5"/>
-              <circle cx="685" cy="175" r="28" stroke="#38bdf8" stroke-width="2" fill="#080c14"/>
-              <circle cx="685" cy="175" r="12" stroke="#93c5fd" stroke-width="1.5"/>
+                <div class="feature-card" style="margin: 0; background: rgba(255, 255, 255, 0.02); border-left: 2px solid var(--amber-primary);">
+                  <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--amber-primary); margin-bottom: 0.25rem;">[ROADSIDE DILEMMA 02]</div>
+                  <h4 style="font-size: 0.95rem; color: var(--steam-white); margin-bottom: 0.35rem;">🍄 Roadside Forager Shack</h4>
+                  <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.5;">
+                    <strong style="color: var(--amber-light);">Gain:</strong> Wild matsutake or dried bonito boosts noodle tips.<br>
+                    <strong style="color: var(--crimson-stamp);">Cost:</strong> Spending your last cash coins saved for emergency petrol.
+                  </p>
+                </div>
 
-              <!-- Technical Labels & Callouts -->
-              <circle cx="490" cy="120" r="4" fill="#f59e0b"/>
-              <line x1="490" y1="120" x2="520" y2="80" stroke="#f59e0b" stroke-width="1"/>
-              <text x="525" y="78" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="10">[01] Copilot: Wife's Urna & Framed Portrait</text>
-
-              <circle cx="280" cy="130" r="4" fill="#38bdf8"/>
-              <line x1="280" y1="130" x2="260" y2="25" stroke="#38bdf8" stroke-width="1"/>
-              <text x="260" y="20" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10">[02] Flat 1,810mm Bed: Mechanical Typewriter</text>
-
-              <circle cx="155" cy="145" r="4" fill="#ef4444"/>
-              <line x1="155" y1="145" x2="110" y2="145" stroke="#ef4444" stroke-width="1"/>
-              <text x="10" y="148" fill="#f87171" font-family="'JetBrains Mono', monospace" font-size="10">[03] Rear Hatch: Broth & Noodle Station</text>
-            </svg>
+                <div class="feature-card" style="margin: 0; background: rgba(255, 255, 255, 0.02); border-left: 2px solid #a855f7;">
+                  <div style="font-family: var(--font-mono); font-size: 0.72rem; color: #c084fc; margin-bottom: 0.25rem;">[ROADSIDE DILEMMA 03]</div>
+                  <h4 style="font-size: 0.95rem; color: var(--steam-white); margin-bottom: 0.35rem;">⛰️ Hidden Village Detour</h4>
+                  <p style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.5;">
+                    <strong style="color: var(--amber-light);">Gain:</strong> Breathtaking vistas for the 24 roll exposures & loyal regulars.<br>
+                    <strong style="color: var(--crimson-stamp);">Cost:</strong> Severe brake wear & radiator boil-over risk on steep pass.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="blueprint-specs-grid">
@@ -242,6 +233,49 @@
               <li><strong>Tell the Truth:</strong> Confess he lost his job, his home, and lives in the wagon. Moral relief, but intensifies filial guilt.</li>
               <li><strong>Maintain the Lie:</strong> Choke back tears and say: <em>«Everything is going great here, son. Just wanted to hear your voice»</em>. Preserves pride, deepens loneliness.</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02b. Author's Manifesto & Genesis -->
+      <section id="genesis" class="doc-section">
+        <span class="section-tag" style="background: rgba(245, 158, 11, 0.15); color: var(--amber-light); border-color: rgba(245, 158, 11, 0.3);">Developer's Note</span>
+        <h2 class="section-heading">Project Genesis: Silent Battles and Hot Broth</h2>
+
+        <p class="lead-text" style="color: var(--amber-light); font-style: italic;">
+          «Not all battles are fought with assault rifles or in bloody wars. Most of us fight invisible battles every single day: against the cold, against routine, and against the terror of being discarded.»
+        </p>
+
+        <div style="background: rgba(14, 20, 30, 0.7); border: 1px solid var(--border-subtle); border-left: 3px solid var(--amber-primary); border-radius: var(--radius-md); padding: 1.75rem; margin: 1.5rem 0; line-height: 1.8;">
+          <p style="margin-bottom: 1.25rem;">
+            The inspiration for <strong>OBSOLETO</strong> didn't come from a boardroom meeting analyzing Steam retention curves. It came from real-life experiences, forgotten accounts, countless videos documenting quiet daily life on the fringes of Japan, and my own dreams. From watching time slip away relentlessly, watching dreams come and go, and realizing that to modern corporations, humans are often treated as nothing more than replaceable lever-pullers.
+          </p>
+
+          <p style="margin-bottom: 1.25rem;">
+            As an AI Architect, I face the paradox of our era every day: a colossal technological capability too often abused out of laziness to flood the world with hollow stories, soulless games, and flat characters devoid of human tropes or genuine pain. We live in a quiet generational clash: the young who look down on the old, convinced nothing before them held any value; and the old who refuse to adapt, convinced every novelty is a disaster. Yet beneath all that noise lies a latent terror that touches everyone: <strong>the fear that your time will run out, and the world will declare you obsolete</strong>.
+          </p>
+
+          <p style="margin-bottom: 1.25rem;">
+            This is a reality millions already endure: an ache of nostalgia, broken promises, and an endless story that never pauses. No matter how much you endure today, tomorrow you will have to endure a little more, regardless of the freezing rain, hunger, or bone-deep exhaustion.
+          </p>
+
+          <p style="margin-bottom: 0;">
+            Every day, we are all fighting for the same thing—survival and purpose—but some people carry far heavier battles. And those battles aren't fought with gunpowder: they are fought silently in the front seat of a beat-up car on a frozen roadside. And sometimes, in the middle of that storm, <strong>a simple bowl of hot broth is all a human being needs to smile, catch their breath, and keep going for one more kilometer.</strong>
+          </p>
+        </div>
+
+        <div class="grid-2" style="margin-top: 1.25rem;">
+          <div class="feature-card" style="border-left: 2px solid var(--frost-cyan);">
+            <h4 style="color: var(--frost-cyan); font-size: 0.95rem; margin-bottom: 0.5rem; font-family: var(--font-mono);">// THE TOYOTA PROBOX FACTOR</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+              In Japan, the white Probox is the quintessential symbol of the unglamorous working salaryman. Zero vanity: rear seats fold completely flat to hold cardboard sample boxes, the dashboard has an integrated pull-out table to eat noodles on the go, and the 1NZ-FE engine refuses to die. It is the only true vehicle for someone with nothing left but the highway.
+            </p>
+          </div>
+          <div class="feature-card" style="border-left: 2px solid var(--amber-primary);">
+            <h4 style="color: var(--amber-light); font-size: 0.95rem; margin-bottom: 0.5rem; font-family: var(--font-mono);">// THE HONEST AUDIENCE</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+              This game is not designed for genre purists; it is for the honest ones. For those who know the weight of unreciprocated loyalty, the quiet sting of a phone call you were too proud to make, and the solace of modest warmth at the end of an exhausting shift.
+            </p>
           </div>
         </div>
       </section>

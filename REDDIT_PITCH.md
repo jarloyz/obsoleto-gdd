@@ -56,6 +56,13 @@ To keep production realistic without requiring an open-world budget:
 
 ---
 
+### A Personal Note on Why I'm Making This
+By day, I work in Artificial Intelligence. Living in that space, you see how obsessed modern corporate culture has become with treating people as interchangeable lever-pullers, and how easily technology can be misused to flood the medium with hollow stories, soulless games, and flat characters devoid of human pain. 
+
+I wanted to design something that addresses the real, silent battles so many people fight every single day: generational friction, broken dreams, and the quiet terror of time running out before the world declares you obsolete. The hardest battles aren't fought with assault rifles in trenches; they are fought in the driver's seat of an old car on a freezing roadside. And sometimes, in the middle of that storm, a simple bowl of hot broth is all a person needs to smile, catch their breath, and keep going for one more kilometer.
+
+---
+
 ### Where I'd Love Your Feedback:
 1. **The Core Loop balance:** Does alternating between slow meditative driving, tactile fast cooking, and midnight typing feel like a satisfying 24-hour cycle?
 2. **Pacing risk:** Does writing without complex fictional plots (just raw memoirs of the day's encounters) work for you emotionally, or would you expect a more branching narrative?
