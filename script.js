@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initDailyLoopTabs();
   initNodeMapSimulator();
   initAudioAmbience();
-  initRedditModal();
   initMobileMenu();
   initMermaidDiagram();
 });
@@ -265,45 +264,6 @@ function stopAmbientRain() {
   }
 }
 
-/* --------------------------------------------------------------------------
-   6. Reddit Pitch Modal & Copy
-   -------------------------------------------------------------------------- */
-function initRedditModal() {
-  const openBtn = document.getElementById('open-reddit-modal');
-  const closeBtn = document.getElementById('close-reddit-modal');
-  const copyBtn = document.getElementById('copy-reddit-btn');
-  const modal = document.getElementById('reddit-modal');
-  const textarea = document.getElementById('reddit-markdown-text');
-
-  if (openBtn && modal) {
-    openBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      modal.classList.add('open');
-    });
-  }
-
-  if (closeBtn && modal) {
-    closeBtn.addEventListener('click', () => {
-      modal.classList.remove('open');
-    });
-  }
-
-  if (modal) {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) modal.classList.remove('open');
-    });
-  }
-
-  if (copyBtn && textarea) {
-    copyBtn.addEventListener('click', () => {
-      textarea.select();
-      navigator.clipboard.writeText(textarea.value).then(() => {
-        showToast('¡Texto para Reddit copiado al portapapeles! 📋');
-        if (modal) modal.classList.remove('open');
-      });
-    });
-  }
-}
 
 /* --------------------------------------------------------------------------
    7. Mobile Navigation Menu Toggle
