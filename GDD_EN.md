@@ -85,11 +85,15 @@ Pain turns into quiet steel:
 
 ## 5. Detailed Systems & Mechanics
 
-### 5.1 Vehicle Physics & Cockpit Management (Toyota Probox)
+### 5.1 Vehicle Physics, Cockpit & Roadside Choices (Toyota Probox)
 * **Inertia & Weight:** Realistic weight distribution. The car struggles uphill when carrying extra noodle cartons and luggage; light tail sliding on wet mountain passes.
 * **Radiator & Temperature:** Steep mountain passes overheat the coolant. Ignoring the rising analog temperature needle causes white steam to billow from the hood, demanding emergency stops.
 * **Windshield Wipers:** Realistic wiper sweep with worn rubber leaves streaks in heavy downpours until replaced.
 * **Cassette & FM Tuner:** Manual knob tuning across 3 regional frequencies with mountain static; finding discarded cassette tapes featuring ambient lo-fi, acoustic folk, and jazz.
+* **Roadside Dilemmas & Spontaneous Curiosity:**
+  * *Will you give a ride to that elderly man walking alone along the shoulder in the drizzle?* You gain his warm company and lost memories of rural Japan, but you must shift your trunk boxes onto the floor to make room.
+  * *Will you stop to buy from that lonely highway stall selling wild mushrooms or dried fish?* Spending your few precious coins might jeopardize tomorrow's fuel money, but it transforms your broth into an unforgettable meal.
+  * *Will you stick to your road map plan, or turn down the unmarked exit that says "Village X: 200m" out of sheer curiosity to see what lies behind that mountain?* Detours stress your brakes and fuel gauge, but reward you with the most poignant viewpoints and grateful night travelers.
 
 ### 5.2 The Trunk Noodle Stall
 * **Boiling Water QTE:** Hold down the trigger to pour boiling water from the kettle to the exact inner fill line.
@@ -101,9 +105,10 @@ Pain turns into quiet steel:
   * *Troubled Youths & Students:* Eat quietly, opening up about their fears and unlocking writing topics.
   * *Elderly Villagers:* Barter fresh garden leeks or eggs in exchange for hot soup and company.
 
-### 5.3 The Typewriter Station (Her Unfinished Dream)
+### 5.3 The Typewriter Station (Writing the Unadorned Truth)
 In the rear cabin, illuminated by a battery lantern, Kenji sits before his late wife's portable typewriter and her old notebooks.
-* **Rhythmic Typing Minigame:** Customer quotes and daytime reflections appear as rhythmic prompts. Pressing keys to tempo produces satisfying lead-type hammer strikes (*clack-clack-clack*).
+* **No Fiction, Only the Raw Truth:** Kenji is not a novelist; he doesn't know how to craft ornate fiction or clever prose. He is just an ordinary man recounting his day-to-day: the morning chill on the steering wheel, the crunch of gravel under worn tires, the three coins dropped into his cup holder, the ache in his shoulders, and the cold silence after hanging up the payphone. **He writes without embellishment.** Since his wife is no longer here to write her book, he will fulfill her dream with the only truth he has: the living memoir of this journey.
+* **Rhythmic Typing Minigame:** Memories and impressions appear as rhythmic prompts. Pressing keys to tempo produces satisfying lead-type hammer strikes (*clack-clack-clack*).
 * **Carriage Return:** Reaching line margins triggers the mechanical chime (*ding!*), requiring an `[Enter]` carriage return (*shhh-clack*).
 * **Physical Jamming:** Missing beats causes mechanical typebars to collide and tangle; the player must manually untangle them with mouse or analog stick.
 * **Submissions:** Completed chapters can be posted via village post boxes to regional literary journals under her name.

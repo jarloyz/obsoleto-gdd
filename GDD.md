@@ -104,13 +104,17 @@ Cada ciclo en el juego representa una jornada de 24 horas dividida en 4 fases or
 
 ## 5. Sistemas y Mecánicas Detalladas
 
-### 5.1 La Conducción (La Ruta)
-* **Física del Vehículo:** No es un arcade de carreras. Se maneja a velocidades moderadas (50 a 80 km/h) en una transmisión manual o automática simple. El coche tiene peso real: se siente pesado en subidas con la cajuela llena y patina ligeramente con aguanieve.
+### 5.1 La Conducción (La Ruta & Micro-Decisiones del Camino)
+* **Física del Vehículo:** No es un arcade de carreras. Se maneja a velocidades moderadas (50 a 80 km/h) en una transmisión manual o automática simple. El Probox tiene peso real: se siente pesado en subidas con la cajuela cargada y patina ligeramente con aguanieve.
 * **Variables del Auto:**
   * *Combustible:* Aguja analógica con testigo de reserva. Quedarse sin gasolina en carretera abierta obliga a pagar remolque costoso o esperar a un buen samaritano.
   * *Temperatura de Motor:* En puertos de montaña empinados o si el radiador tiene fugas, la aguja sube al rojo. Si no se detiene a tiempo para ventilar, el motor echa humo blanco y sufre daño permanente.
   * *Limpiaparabrisas:* Tienen dos velocidades. El cepillo del lado derecho puede estar desgastado y dejar marcas, entorpeciendo la visibilidad con lluvia nocturna hasta que se compre un repuesto.
   * *Radio / Casete:* Permite cambiar entre 3 frecuencias con estática variable según la región, o insertar cintas de casete encontradas o compradas con temas lo-fi, jazz melancólico y folk japonés.
+* **Micro-Decisiones y Curiosidad en Ruta:**
+  * *¿Le darás el rait a ese anciano que camina solo por el arcén de la carretera bajo la llovizna?* Ganarás su compañía y una anécdota entrañable sobre el Japón rural que ya no existe, pero tendrás que reacomodar las cajas del maletero al piso para hacerle espacio.
+  * *¿Te detendrás a comprar en ese puesto solitario en medio de la autopista?* Gastar tus últimas monedas contadas en setas silvestres o pescado seco puede dejarte al borde de no tener para gasolina, pero eleva el sabor del caldo nocturno.
+  * *¿Seguirás tu plan trazado en el mapa o tomarás el desvío que dice "Pueblo X: Entrada a 200m" solo por la curiosidad de ver qué hay detrás de esa montaña?* Explorar caminos secundarios desgasta los frenos y consume tiempo, pero es donde se encuentran los miradores más conmovedores y los clientes más agradecidos.
 
 ### 5.2 El Puesto Rodante (Cajuela & Minijuegos de Cocina)
 Al llegar a un apeadero, plaza de pueblo o estación de tren, el jugador presiona `[E]` para aparcar, abrir la cajuela y encender el farolillo a pilas y el hornillo.
@@ -127,17 +131,17 @@ Al llegar a un apeadero, plaza de pueblo o estación de tren, el jugador presion
   * *Camioneros cansados:* Valoran un café soluble bien caliente y charlar sobre el estado de la carretera más adelante.
   * *Ancianos locales:* Comen despacio, dejan ingredientes de sus huertas como trueque y cuentan la historia del pueblo.
 
-### 5.3 La Estación Creativa (La Máquina de Escribir de Ella)
+### 5.3 La Estación Creativa (Escribir la Verdad sin Adornos)
 Cuando se apaga el hornillo y se baja la compuerta de la cajuela, Kenji pasa a la cabina trasera con el candil a pilas. Sobre una tabla de madera descansa la vieja máquina de escribir mecánica de su difunta esposa, rodeada de sus cuadernos de notas con letra apretada y páginas amarillentas.
-* **El Sentido Emocional:** Ella siempre soñó con ser escritora y publicar su historia; Kenji le prometió durante años que le daría el tiempo y la tranquilidad para hacerlo, una promesa ahogada por las horas extra en la oficina. Cada noche no escribe por vanidad, sino para tejer los fragmentos que ella dejó inconclusos con las vivencias y conversaciones de la gente solitaria que conoció durante el día.
+* **Escribir sin Ficción, Solo la Verdad:** Kenji no es un novelista profesional, no sabe inventar tramas fantasiosas ni figuras retóricas complejas. Es simplemente un hombre común rememorando su día a día: el frío del volante por la mañana, el crujido de las hojas bajo las llantas, las tres monedas dejadas por el camionero, el dolor sordo de espalda y el silencio al colgar la cabina telefónica. **Escribe su historia cruda, honesta y sin adornos.** Ya que su esposa no está para escribir su libro, él cumplirá su sueño regalándole al mundo la crónica viva del viaje que nunca pudieron hacer juntos.
 * **Mecánica Rítmica:**
-  * Las palabras clave e impresiones recolectadas flotan como compases rítmicos sobre el papel.
+  * Las frases de su memoria cotidiana flotan como compases rítmicos sobre el papel.
   * El jugador presiona las teclas al compás de una melodía sutil de piano y lluvia.
   * Cada pulsación reproduce el sonido metálico y seco del tipo de plomo chocando contra el rodillo: *clack-clack-clack*.
   * Al llegar al final de la línea, suena la clásica campanilla (*¡ding!*), y el jugador debe pulsar `[Enter]` para accionar la palanca de retorno (*shhh-clack*).
   * Si se falla el ritmo consecutivamente, los tipos mecánicos de plomo se cruzan y se atascan físicamente; el jugador debe desatorarlos manualmente con el ratón o stick.
 * **El Destino de las Páginas:**
-  * Al juntar cuartillas completas, se pueden enviar por correo postal en las oficinas de los pueblos hacia pequeños certámenes o publicaciones locales bajo el nombre de ella.
+  * Al juntar cuartillas completas, se pueden enviar por correo postal en las oficinas de los pueblos hacia pequeños certámenes o publicaciones locales firmadas bajo el nombre de ella.
   * Respuestas realistas llegan días después a apartados postales: desde rechazos amables hasta pequeños pagos simbólicos de colaboración que permiten cambiar un filtro de aceite o comprar gas butano.
 
 ### 5.4 Gestión de Espacio (Tetris en la Cajuela del Probox)
