@@ -15,23 +15,38 @@
 * **Modelo de Negocio:** Compra única premium (10 - 15 USD), sin microtransacciones ni DLC invasivos.
 
 ### Elevator Pitch
-Tras ser despedido y considerado "obsoleto" a los 47 años en una reestructuración corporativa que liquidó sus 25 años de servicio, un ex-asalariado japonés pierde su departamento y se ve forzado a vivir en su familiar de los 90. Con las cenizas de su difunta esposa y su retrato en el tablero, emprende una travesía hacia el extremo norte (Cabo Sōya) para cumplir la promesa de viaje que postergó toda su vida. Para pagar la gasolina y las refacciones, abre la cajuela cada noche vendiendo fideos instantáneos "tuneados" a trabajadores nocturnos y solitarios de carretera, mientras en el silencio de la madrugada intenta volver a teclear historias en su vieja máquina de escribir.
+Tras ser despedido y considerado "obsoleto" a los 47 años en una reestructuración corporativa que liquidó sus 25 años de servicio —reemplazado por un recién graduado que cobra tres veces menos aunque no sepa hacer la mitad de su trabajo—, Kenji pierde su departamento y se ve forzado a vivir en su viejo Toyota familiar de los 90. Al empacar lo que le queda, se enfrenta a la urna de su difunta esposa, a su retrato y a una montaña de promesas rotas, la más pesada de todas: el viaje por carretera hasta el final que siempre le juró hacer «este año» y que el trabajo postergó hasta que fue tarde. 
+
+Junto a sus cenizas y a **la máquina de escribir mecánica de ella** —quien siempre soñó con ser escritora mientras él le prometía tiempo que nunca le dio—, Kenji toma la última fuerza que le queda: si ya es chatarra para el sistema, ahora vivirá para cumplir esas promesas. Recorrerá carreteras secundarias vendiendo fideos instantáneos "tuneados" desde la cajuela para pagar la gasolina, mientras cada noche golpea las teclas de la máquina de su esposa para terminar la historia que ella no pudo escribir.
 
 ---
 
 ## 2. Sinopsis Narrativa & Arco del Personaje
 
-### Contexto & Detonante
-* **El Protagonista:** Kenji (47 años). Durante más de dos décadas fue un analista administrativo invisible. Su rutina era puntual, silenciosa y austera.
-* **El Duelo:** Su esposa falleció de cáncer hace tres años tras una larga convalecencia que consumió sus ahorros. Sus hijos ya son adultos con sus propias familias, hipotecas y problemas; Kenji se rehúsa a ser una carga económica o emocional para ellos.
-* **La Sentencia:** La empresa decide reemplazar a los veteranos de sueldo alto por graduados novatos. Con un apretón de manos formal y un modesto cheque de liquidación consumido en deudas médicas pendientes, Kenji es expulsado del sistema.
-* **El Exilio Digno:** Incapaz de pagar el alquiler de su minúsculo piso y rechazado sistemáticamente en las entrevistas por su edad, empaca lo esencial en su coche familiar: mantas, un hornillo de gas portátil, ollas, una máquina de escribir de su juventud y una urna de cerámica con las cenizas de su esposa envuelta en tela de seda en el asiento del copiloto.
+### Contexto: 25 Años de Rutina Invisible
+* **El Protagonista:** Kenji (47 años). Durante un cuarto de siglo fue un oficinista administrativo leal, puntual e invisible.
+* **El Vehículo del Asalariado:** Una vagoneta familiar japonesa de mediados de los 90 (un *Toyota Corolla Touring Wagon / Nissan AD Van* de motor 1.5L), color blanco comercial desteñido, con tapacubos rayados y parachoques de plástico gris. Lo compró a plazos hace casi dos décadas cuando sus hijos eran pequeños; luego se convirtió en el coche de diario que pasaba 12 horas bajo el sol en el estacionamiento corporativo mientras Kenji acumulaba horas extra. Huele a té verde embotellado, aire acondicionado añejo y papeles sellados. No es una camper de lujo ni un capricho bohemio: es el carromato honesto y desgastado de un asalariado común.
+* **La Sentencia Corporativa:** La directiva convoca a reestructuración. *«Lo sabes perfectamente: un recién graduado cobra tres veces menos que tú, aunque no sepa hacer lo que tú haces ni entienda el peso de una responsabilidad real. Pero para la hoja de cálculo de la gerencia, eres solo un costo operativo obsoleto.»* Un apretón de manos tibio, una caja de cartón para sus pertenencias de escritorio y un modesto cheque de liquidación que se evapora de inmediato pagando pagarés atrasados del hospital.
+* **La Soledad y el Desalojo:** Sin ingresos para el alquiler metropolitano y negándose con orgullo silencioso a pedir asilo a sus hijos adultos —quienes lidian con sus propias deudas, alquileres y problemas—, llega el día de entregar las llaves del minúsculo departamento.
 
-### El Giro de la Cajuela
-Estacionado bajo la lluvia en un muelle industrial, sin dinero para una cena caliente, Kenji hierve agua en su hornillo para prepararse un vaso de ramen instantáneo de 100 yenes. Le agrega cebollín picado con navaja sobre el cofre y un huevo crudo para enriquecer el caldo con el calor residual. El vapor llama la atención de dos obreros del turno nocturno que tiritan de frío:
-> — *«Oiga, jefe... ¿a cuánto el tazón?»*
+### El Momento de Empacar: La Montaña de Promesas Rotas
+En la penumbra del departamento vacío, Kenji apila lo poco que cabe en el maletero de la vagoneta: un colchón delgado, dos mantas, una olla pequeña y un hornillo de gas portátil. 
 
-Kenji, atónito, improvisa un precio modesto. Tres monedas caen en el portavasos de su consola central. En ese momento comprende: no necesita un local ni un permiso millonario para no morirse de hambre; necesita mantenerse en movimiento, alimentar a los que tienen frío y llegar a la costa norte antes del primer temporal de nieve.
+Al levantar la pequeña urna de cerámica con las cenizas de su esposa y el marco de madera con su fotografía, el peso del pasado le cae encima como plomo:
+* **La Promesa de la Ruta:** Recuerda las noches que llegaba a casa a las 22:30 con la camisa empapada en sudor frío y la cena fría en la mesa. Cada año, al verla cansada, él le decía con tono reconfortante: *«Este año sí. Este año sí pedimos las vacaciones acumuladas, metemos las maletas a la vagoneta y recorremos toda la carretera nacional hasta el final, hasta donde el mar se congela»*. Pero ese año nunca llegó. Siempre hubo un balance trimestral que cuadrar, una auditoría interna, un ascenso prometido que nunca llegó. Y ella siempre estuvo ahí, mirándolo con esa sonrisa paciente, acariciándole el hombro y diciendo: *«No te preocupes, Kenji. El próximo año lo haremos»*. Hasta que el cáncer se la llevó hace tres años, dejándolo con las manos vacías y la casa en silencio.
+* **La Máquina de Escribir de Ella:** En la última caja encuentra la vieja máquina de escribir mecánica portátil de su esposa. Ella siempre soñó con ser escritora; tenía cuadernos llenos de relatos a medio empezar, recortes de noticias y poemas en servilletas. Él le había jurado que cuando terminaran de pagar la hipoteca, ella podría renunciar a sus trabajos temporales y dedicarse por entero a su libro. *¿En cuánto le fallaste en vida? ¿Cuántas promesas quedaron sepultadas bajo el polvo de una oficina que al final te tiró a la calle como chatarra inútil?* Y aun así, en sus recuerdos, ella jamás le reprochó nada; siempre le sonrió.
+
+### La Última Fuerza: Cumplir la Palabra
+El dolor se transforma en una convicción silenciosa y férrea. La sociedad lo ha declarado obsoleto, pero para ella todavía tiene una deuda pendiente:
+> *«Si para el mundo ya no sirvo, si ya no le debo un solo minuto a ninguna empresa... ahora voy a cumplir lo que te prometí. Te voy a llevar hasta el final de la ruta. Y en tu máquina voy a escribir la historia que no te di tiempo de contar.»*
+
+Coloca la urna de cerámica envuelta en tela de seda en el asiento del copiloto, fija el retrato con cinta adhesiva al tablero junto a los conductos de ventilación, acomoda la máquina de escribir sobre el respaldo trasero y gira la llave del motor.
+
+### El Giro de la Cajuela: La Primera Moneda
+Estacionado bajo la lluvia en un muelle industrial de la periferia, sin dinero para una fonda, Kenji hierve agua en su hornillo para prepararse un vaso de fideos instantáneos de 100 yenes. Pica cebollín con su navaja sobre el cofre y le deja caer un huevo crudo para que cuaje con el calor residual. El vapor blanco llama la atención de dos estibadores que salen tiritando del turno nocturno:
+> — *«Oiga, jefe... huele increíble. ¿A cuánto el tazón?»*
+
+Kenji, titubeando, mira sus últimos fideos y murmura una cifra modesta. Tres monedas caen con un golpe seco en el portavasos de la consola central. En ese instante comprende: no necesita un restaurante millonario para vivir; necesita mantenerse en ruta, calentar el estómago de los que tienen frío en la noche y pagar la gasolina para llegar al Cabo Sōya.
 
 ---
 
@@ -105,17 +120,18 @@ Al llegar a un apeadero, plaza de pueblo o estación de tren, el jugador presion
   * *Camioneros cansados:* Valoran un café soluble bien caliente y charlar sobre el estado de la carretera más adelante.
   * *Ancianos locales:* Comen despacio, dejan ingredientes de sus huertas como trueque y cuentan la historia del pueblo.
 
-### 5.3 La Estación Creativa (Máquina de Escribir Nocturna)
-Cuando se apaga el hornillo y se baja la persiana/cajuela, Kenji pasa al asiento trasero o coloca una tabla sobre el volante para usar su máquina de escribir mecánica.
+### 5.3 La Estación Creativa (La Máquina de Escribir de Ella)
+Cuando se apaga el hornillo y se baja la compuerta de la cajuela, Kenji pasa a la cabina trasera con el candil a pilas. Sobre una tabla de madera descansa la vieja máquina de escribir mecánica de su difunta esposa, rodeada de sus cuadernos de notas con letra apretada y páginas amarillentas.
+* **El Sentido Emocional:** Ella siempre soñó con ser escritora y publicar su historia; Kenji le prometió durante años que le daría el tiempo y la tranquilidad para hacerlo, una promesa ahogada por las horas extra en la oficina. Cada noche no escribe por vanidad, sino para tejer los fragmentos que ella dejó inconclusos con las vivencias y conversaciones de la gente solitaria que conoció durante el día.
 * **Mecánica Rítmica:**
-  * Las palabras e impresiones recolectadas durante las conversaciones de la tarde flotan como notas en un pentagrama o líneas de compás.
-  * El jugador presiona las teclas al compás de una melodía sutil de piano o lluvia.
-  * Cada pulsación reproduce el sonido metálico contundente de la tecla de plomo chocando contra el rodillo: *clack-clack-clack*.
+  * Las palabras clave e impresiones recolectadas flotan como compases rítmicos sobre el papel.
+  * El jugador presiona las teclas al compás de una melodía sutil de piano y lluvia.
+  * Cada pulsación reproduce el sonido metálico y seco del tipo de plomo chocando contra el rodillo: *clack-clack-clack*.
   * Al llegar al final de la línea, suena la clásica campanilla (*¡ding!*), y el jugador debe pulsar `[Enter]` para accionar la palanca de retorno (*shhh-clack*).
   * Si se falla el ritmo consecutivamente, los tipos mecánicos de plomo se cruzan y se atascan físicamente; el jugador debe desatorarlos manualmente con el ratón o stick.
 * **El Destino de las Páginas:**
-  * Al juntar 10 o 15 cuartillas terminadas, se pueden enviar por correo postal en las oficinas de las cabeceras comarcales a editoriales independientes, revistas o concursos literarios.
-  * Las respuestas llegan días después a apartados de correos: desde cartas de rechazo automáticas hasta cheques modestos de colaboración que salvan el presupuesto.
+  * Al juntar cuartillas completas, se pueden enviar por correo postal en las oficinas de los pueblos hacia pequeños certámenes o publicaciones locales bajo el nombre de ella.
+  * Respuestas realistas llegan días después a apartados postales: desde rechazos amables hasta pequeños pagos simbólicos de colaboración que permiten cambiar un filtro de aceite o comprar gas butano.
 
 ### 5.4 Gestión de Espacio (Tetris en la Cajuela)
 El espacio de la vagoneta es un recurso finito modelado en una cuadrícula tipo inventario táctico:
@@ -171,10 +187,11 @@ Cuando el jugador viaja entre dos nodos, el motor selecciona de una librería de
 3. **Camino Infinito (Endless Zen Mode):**
    * Se desbloquea tras finalizar la campaña. Carreteras continuas con clima dinámico procedural, sin urgencia de fin de trayecto, ideal para relajación y streaming.
 
-### El Clímax: El Cabo Sōya
-El camino termina donde acaba el asfalto frente al mar del norte. El viento frío sacude la carrocería. Kenji aparca en el mirador desierto, apaga el motor que cruje enfriándose y saca la tetera para preparar dos tazones: uno para él y otro que coloca frente a la urna de su esposa en el cofre del coche.
-En la máquina de escribir redacta la última página: una carta de agradecimiento a la vida, a los extraños que compartieron su caldo en la noche y a ella por haber sido su compañera.
-Al amanecer, esparce las cenizas sobre las olas. No hay fanfarria ni fuegos artificiales; solo el sonido del mar, el arranque suave del motor y los créditos rodando sobre fotografías instantáneas de las personas que conoció en la ruta.
+### El Clímax: El Cabo Sōya y las Dos Promesas
+El camino termina donde acaba el asfalto frente al mar gris y helado del norte. El viento polar sacude la chapa de la vagoneta. Kenji aparca en el mirador desierto, apaga el motor que cruje enfriándose tras miles de kilómetros y contempla el horizonte que siempre le juró mostrarle.
+Baja del auto, monta el hornillo sobre el cofre y prepara dos tazones humeantes: uno para él y otro que coloca con reverencia junto a la urna de cerámica y el retrato de ella.
+Dentro del auto, con el candil iluminando el vapor de su propio aliento, teclea en la máquina de escribir de su esposa los últimos párrafos del manuscrito que ella empezó hace dos décadas: un desenlace tejido con las voces, penas y silencios de los trabajadores, ancianos y viajeros que conoció en cada pueblo.
+Al amanecer, cuando el sol pálido asoma sobre las olas del mar del norte, Kenji esparce sus cenizas al viento. Ha cumplido las dos promesas que más le pesaban en el alma: llevarla hasta el fin del camino y regalarle al mundo el libro que ella siempre soñó escribir. No hay fanfarria ni victoria comercial; solo el murmullo del mar, el sonido del motor arrancando en paz y los créditos rodando sobre fotografías instantáneas de la ruta.
 
 ---
 
