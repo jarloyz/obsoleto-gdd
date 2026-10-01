@@ -20,7 +20,7 @@ Set in **contemporary Japan**, you play as Kenji (47), an administrative salarym
 In the back, he carries:
 - His late wife's ceramic urn and her framed portrait taped to the air vents.
 - A crumpled notepad with his son's home phone number (no mobile data, no GPS).
-- A 35mm film camera with 24 exposures left — bought 15 years ago for a road trip they endlessly postponed and never took.
+- **The Vacations That Never Arrived (35mm camera):** Bought 15 years ago for a holiday road trip they endlessly postponed every summer (*«Next year we will go north, I promise»*), until cancer took her. Exactly 24 exposures left on the roll to finally complete that journey to Cape Sōya.
 - A folded paper road map bought at a gas station.
 - **Her mechanical typewriter:** she dreamed of being a published novelist, a promise he broke under 25 years of unpaid overtime.
 

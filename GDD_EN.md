@@ -34,8 +34,8 @@ With her ashes in a ceramic urn and her portrait taped to the dashboard, Kenji f
 ### Packing the Car: The Four Anchors of Memory
 1. **The Ceramic Urn & Framed Portrait:** Wrapped in silk on the front passenger seat; her black-and-white portrait taped beside the dashboard air vents.
 2. **The Folded Paper Road Map:** Picked up at a highway service area. With no GPS or cellular data, this paper map folded across the steering wheel is his only compass across national secondary routes (*kokudō*).
-3. **The 35mm Film Camera (24 Exposures Remaining):** Bought 15 years ago with his wife as «the first step for our big holiday road trip» that was postponed year after year until her hospital stay. Exactly 24 frames remain.
-4. **Her Mechanical Typewriter:** The sacred artifact. She spent decades scribbling story outlines and poems in notebooks. He always promised her: *«Once the debts are cleared, I will give you the time to write your novel»*. A promise broken by 25 years of unpaid overtime.
+3. **The Vacations That Never Arrived (35mm Film Camera):** Bought 15 years ago with his wife as «the first step for our family road trip up north» that he postponed every summer swearing: *«Next year we will drive north, I promise»*. That year never arrived; it vanished beneath 25 years of unpaid overtime, corporate deadlines, and cancer. Exactly 24 frames remain: today, with her ashes on the passenger seat, that postponed vacation has finally begun toward Cape Sōya. Every shot will be developed in the final credits.
+4. **Her Mechanical Typewriter:** The sacred artifact. She spent decades scribbling story outlines and poems in notebooks. He always promised her: *«Once the debts are cleared, I will give you the time to write your novel»*. A promise broken by 25 years of unpaid overtime. Each midnight on the flat cargo floor, Kenji types to settle that debt.
 
 ### The Green NTT Payphone Dilemma
 At road stations (*Michi-no-Eki*) and village crossroads, green NTT public coin payphones hum quietly in the night. Inserting a 100-yen coin earned from selling noodles, Kenji dials his son’s number:
