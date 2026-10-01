@@ -61,6 +61,6 @@ To keep production realistic without requiring an open-world budget:
 2. **Pacing risk:** Does writing without complex fictional plots (just raw memoirs of the day's encounters) work for you emotionally, or would you expect a more branching narrative?
 3. **Engine choice:** I'm planning to build this in **Godot 4** (or lightweight Unity URP). Any specific caveats for modular road stitching and interior vehicle physics in Godot?
 
-The full interactive Game Design Document (with dynamic Mermaid flowcharts) is published on my GitHub Pages repo here: [YOUR GITHUB PAGES LINK HERE]
+The full interactive Game Design Document (with dynamic Mermaid flowcharts) is published on my GitHub Pages repo here: https://jarloyz.github.io/obsoleto-gdd/
 
 Thanks for pushing me to get this out of my head and onto paper!
